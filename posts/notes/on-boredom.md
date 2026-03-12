@@ -1,0 +1,6 @@
+---
+title: Boredom
+date: 5/30/2024
+---
+
+Boredom (with capable restraints^[Capable restraints, in their simplest form, are things/systems that inhibit your ability to access non-useful entertainment, through the path of least resistance. Meaning that they are not the *discipline* to not grab your phone and Watch Youtube, they are the thing that makes it (close to) impossible for you to, even if you wanted to.] to non-useful enetertainment^[Think of non-useful entertainment as anything you wish you didn't consume right after consuming it. Generally including things like TikTok, Reels, (most) Youtube videos, social media, etc... A better definition is probably: *Entertainment that is used as a cure to boredom, loneliness, or as a shortcut to turning off your mind*]) seems to be a reasonably good path to what many would call productivity^[I don't think I have ever actually gotten into a true state of productivity, rather, what I mean by "many people would call", are activities that would be commonly defined as more "productive" or "better" by the general population (especailly by your parents). Think; Reading > TV, Exercise > Videogames, etc...] — though not in the truest sense of the word.

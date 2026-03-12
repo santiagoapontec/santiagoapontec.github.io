@@ -1,0 +1,7 @@
+{
+  "title": "A short note on thinking",
+  "date": "3/10/2026",
+  "content": "<p>This is the note content. It would say something short and memorable here, and hopefully something worth remembering down the road.</p>\n<p>This could have a second paragraph if the note is a bit longer than usual. <sup>1</sup></p>\n",
+  "footnotes": "<p class=\"footnote\">(1) And this would be a footnote attached to the second paragraph.</p>",
+  "slug": "test-note"
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        main {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            margin-top: 40px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            border-bottom: 1px solid #ddd;
+            opacity: 1;
+            transition: opacity 0.15s ease;
+        }
+
+        li:not(.expandable) {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            padding: 8px 0;
+        }
+
+        .post-list > section > ul > li:hover {
+            opacity: 0.6;
+        }
+
+        .entry-header {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            padding: 8px 0;
+            cursor: pointer;
+        }
+
+        .arrow {
+            font-size: 16px;
+            color: #888;
+            transition: transform 0.2s ease;
+            display: inline-block;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .arrow-placeholder {
+            display: inline-block;
+            width: 12px;
+        }
+
+        .expandable.open .arrow {
+            transform: rotate(90deg);
+        }
+
+        .title {
+            font-size: 14px;
+        }
+
+        .date {
+            margin-left: auto;
+            font-size: 13px;
+            color: #888;
+        }
+
+        .sub-parts {
+            display: none;
+            padding-left: 115px;
+        }
+
+        .expandable.open .sub-parts {
+            display: block;
+        }
+
+        .sub-parts li {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            padding: 6px 0;
+            border-bottom: 1px solid #eee;
+            opacity: 1;
+            transition: opacity 0.15s ease;
+        }
+
+        .expandable.open:hover .sub-parts li {
+            opacity: 0.4;
+        }
+
+        .expandable.open:hover .sub-parts li:hover {
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>Learning</h1>
+        <p>Study journals for things I've learnt / I'm learning</p>
+    </header>
+
+    <main>
+        <!-- LEARNING-LIST-START -->
+  <div class="post-list">
+  <section>
+    <h2>Coding</h2>
+    <ul>
+      <li class="expandable">
+        <div class="entry-header">
+          <span class="arrow">›</span>
+          <span class="title">Python</span>
+          <span class="date">Started on 1/5</span>
+        </div>
+        <ul class="sub-parts">
+          <li onclick="window.location='learning-posts/python-1.html'" style="cursor:pointer"><span class="title">Variables and Data Types</span><span class="date">1/5</span></li>
+          <li onclick="window.location='learning-posts/python-2.html'" style="cursor:pointer"><span class="title">Loops and Conditionals</span><span class="date">1/12</span></li>
+          <li onclick="window.location='learning-posts/python-3.html'" style="cursor:pointer"><span class="title">Functions</span><span class="date">1/20</span></li>
+        </ul>
+      </li>
+      <li class="expandable">
+        <div class="entry-header">
+          <span class="arrow">›</span>
+          <span class="title">JavaScript</span>
+          <span class="date">Started on 2/3</span>
+        </div>
+        <ul class="sub-parts">
+          <li onclick="window.location='learning-posts/Java-1.html'" style="cursor:pointer"><span class="title">Variables and Functions</span><span class="date">2/3</span></li>
+          <li onclick="window.location='learning-posts/java-2.html'" style="cursor:pointer"><span class="title">Arrays and Loops</span><span class="date">2/10</span></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>Math</h2>
+    <ul>
+      <li class="expandable">
+        <div class="entry-header">
+          <span class="arrow">›</span>
+          <span class="title">Pre-Algebra</span>
+          <span class="date">Started on 2/1</span>
+        </div>
+        <ul class="sub-parts">
+          <li onclick="window.location='learning-posts/math-integers1.html'" style="cursor:pointer"><span class="title">What are Integers</span><span class="date">1/10</span></li>
+          <li onclick="window.location='learning-posts/math-integers2.html'" style="cursor:pointer"><span class="title">Adding and Subtracting Integers</span><span class="date">1/15</span></li>
+          <li onclick="window.location='learning-posts/math-fractions.html'" style="cursor:pointer"><span class="title">What are Fractions</span><span class="date">2/1</span></li>
+        </ul>
+      </li>
+      <li class="expandable">
+        <div class="entry-header">
+          <span class="arrow">›</span>
+          <span class="title">Geometry</span>
+          <span class="date">Started on 2/10</span>
+        </div>
+        <ul class="sub-parts">
+          <li onclick="window.location='learning-posts/geometry-1.html'" style="cursor:pointer"><span class="title">Points, Lines and Planes</span><span class="date">2/10</span></li>
+          <li onclick="window.location='learning-posts/geometry-2.html'" style="cursor:pointer"><span class="title">Areas and Perimeters</span><span class="date">2/15</span></li>
+        </ul>
+      </li>
+      <li class="expandable">
+        <div class="entry-header">
+          <span class="arrow">›</span>
+          <span class="title">Trigonometry</span>
+          <span class="date">Started on 3/1</span>
+        </div>
+        <ul class="sub-parts">
+          <li onclick="window.location='learning-posts/trig-1.html'" style="cursor:pointer"><span class="title">The Unit Circle</span><span class="date">3/1</span></li>
+          <li onclick="window.location='learning-posts/trig-2.html'" style="cursor:pointer"><span class="title">Trig Identities</span><span class="date">3/5</span></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>Physics</h2>
+    <ul>
+      <li class="expandable">
+        <div class="entry-header">
+          <span class="arrow">›</span>
+          <span class="title">Classical Mechanics</span>
+          <span class="date">Started on 1/20</span>
+        </div>
+        <ul class="sub-parts">
+          <li onclick="window.location='learning-posts/physics1.html'" style="cursor:pointer"><span class="title">Newton's Laws</span><span class="date">1/8</span></li>
+          <li onclick="window.location='learning-posts/physics-2.html'" style="cursor:pointer"><span class="title">Work and Energy</span><span class="date">1/20</span></li>
+        </ul>
+      </li>
+      <li class="expandable">
+        <div class="entry-header">
+          <span class="arrow">›</span>
+          <span class="title">Waves and Oscillations</span>
+          <span class="date">Started on 2/5</span>
+        </div>
+        <ul class="sub-parts">
+          <li onclick="window.location='learning-posts/physics-3.html'" style="cursor:pointer"><span class="title">Wave Properties</span><span class="date">2/5</span></li>
+          <li onclick="window.location='learning-posts/physics-4.html'" style="cursor:pointer"><span class="title">Sound Waves</span><span class="date">2/18</span></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</div>
+  <!-- LEARNING-LIST-END -->
+    </main>
+
+    <footer>
+        <a href="index.html">Home</a>
+    </footer>
+
+    <script>
+    document.querySelectorAll('.entry-header').forEach(function(header) {
+      header.addEventListener('click', function() {
+        var item = header.closest('.expandable');
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+  
+  </body>
+</html>

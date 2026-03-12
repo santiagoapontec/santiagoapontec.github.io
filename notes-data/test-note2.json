@@ -1,0 +1,7 @@
+{
+  "title": "A note from February",
+  "date": "2/15/2026",
+  "content": "<p>This is a second test note from a different month, just to make sure the build script groups and separates things correctly.</p>\n",
+  "footnotes": "",
+  "slug": "test-note2"
+}

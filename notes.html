@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        .page-layout {
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+        }
+
+        main {
+            width: 440px;
+            flex-shrink: 0;
+        }
+
+        aside {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 8px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            margin-top: 40px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+            opacity: 1;
+            transition: opacity 0.15s ease;
+            cursor: pointer;
+        }
+
+        .post-list {
+            padding-left: 75px;
+        }
+
+        .post-list li:hover {
+            opacity: 0.6;
+        }
+
+
+        li.selected {
+            opacity: 1 !important;
+            font-weight: 600;
+        }
+
+        li.selected .date {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        li.month-end {
+            border-bottom: 1px solid #999;
+        }
+
+        .title {
+            font-size: 14px;
+        }
+
+        .read-time {
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .date {
+            margin-left: auto;
+            font-size: 13px;
+            color: #888;
+        }
+
+        .note-content {
+            display: none;
+        }
+
+        .note-display {
+            width: 340px;
+            padding-top: 20px;
+        }
+
+        .placeholder {
+            color: #aaa;
+            font-style: italic;
+            font-size: 13px;
+        }
+
+        .note-display h3 {
+            font-size: 22px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 6px;
+        }
+
+        .note-display .note-date {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .note-display p {
+            font-size: 14px;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        .note-display .footnote {
+            font-size: 12px;
+            color: #aaa;
+            text-align: left;
+            margin-top: 24px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>Notes</h1>
+        <p>Short and memorable snippets...hopefully</p>
+    </header>
+
+    <div class="page-layout">
+        <main>
+            <!-- NOTES-LIST-START -->
+  <div class="post-list">
+  <section>
+    <h2>2026</h2>
+    <ul>
+      <li data-note="life-right-now"><span class="title">Life right now</span><span class="date">1/29</span></li>
+      <li data-note="on-dreaming"><span class="title">On Dreaming</span><span class="date">1/01</span></li>
+    </ul>
+  </section>
+  <section>
+    <h2>2025</h2>
+    <ul>
+      <li class="month-end" data-note="simple-not-easy"><span class="title">Simple, not easy</span><span class="date">12/07</span></li>
+      <li data-note="The-restaurant-paradox"><span class="title">The ordering paradox</span><span class="date">11/26</span></li>
+    </ul>
+  </section>
+  <section>
+    <h2>2024</h2>
+    <ul>
+      <li data-note="on-boredom"><span class="title">Boredom</span><span class="date">5/30</span></li>
+    </ul>
+  </section>
+</div>
+  <!-- NOTES-LIST-END -->
+        </main>
+
+        <aside>
+            <div class="note-display">
+                <p class="placeholder">Select a note to view it</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <a href="index.html">Home</a>
+    </footer>
+
+    <script>
+        var notes = document.querySelectorAll('[data-note]');
+        var display = document.querySelector('.note-display');
+
+        notes.forEach(function(item) {
+            item.addEventListener('click', function() {
+            var slug = item.getAttribute('data-note');
+
+            document.querySelectorAll('[data-note]').forEach(function(n) {
+                n.classList.remove('selected');
+            });
+            item.classList.add('selected');
+
+            fetch('notes-data/' + slug + '.json')
+                .then(function(response) { return response.json(); })
+                .then(function(note) {
+                display.innerHTML =
+                    '<h3>' + note.title + '</h3>' +
+                    '<p class="note-date">' + note.date + '</p>' +
+                    note.content +
+                    note.footnotes;
+                })
+                .catch(function() {
+                display.innerHTML = '<p class="placeholder">Could not load note.</p>';
+                });
+            });
+        });
+    </script>
+
+  </body>
+</html>

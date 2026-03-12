@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Aponte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .frame-label {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .today-date {
+            font-size: 22px;
+            font-style: italic;
+            color: #aaa;
+        }
+
+        .counter-heading {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .counter-time {
+            font-size: 22px;
+            font-style: italic;
+            color: #aaa;
+        }
+
+        .jump-heading {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .jump-to {
+            font-size: 22px;
+            font-style: italic;
+            color: #aaa;
+            margin-bottom: 24px;
+        }
+
+        .jump-links {
+            display: flex;
+            gap: 48px;
+            justify-content: center;
+        }
+
+        .jump-links a {
+            font-size: 16px;
+            color: #1a1a1a;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .jump-links a:hover {
+            color: #888;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+            color: #aaa;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+    </style>
+
+  </head>
+  <body>
+    <main>
+
+        <section class="today">
+            <p class="frame-label">Today is</p>
+            <p class="today-date" id="today-date"></p>
+        </section>
+
+        <section class="counter">
+            <p class="counter-heading">This website has been active for</p>
+            <p class="counter-time" id="counter-time"></p>
+        </section>
+
+        <section class="jump">
+            <p class="jump-heading">Feel free to jump</p>
+            <p class="jump-to">to</p>
+            <div class="jump-links">
+                <a href="writing.html">Writing</a>
+                <a href="learning.html">Learning</a>
+                <a href="notes.html">Notes</a>
+                <a href="daily.html">Daily</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>By Santiago Aponte</p>
+        <a href="mailto:placeholder@email.com">Contact</a>
+    </footer>
+
+    <script>
+        var launchDate = new Date('2026-03-10T21:20:00');
+
+        function formatToday() {
+        var now = new Date();
+        var m = now.getMonth() + 1;
+        var d = now.getDate();
+        var y = now.getFullYear();
+        document.getElementById('today-date').textContent = m + '/' + d + '/' + y;
+        }
+
+        function updateCounter() {
+        var now = new Date();
+        var diff = now - launchDate;
+
+        if (diff < 0) {
+            document.getElementById('counter-time').textContent = 'not yet launched...';
+            return;
+        }
+
+        var seconds = Math.floor(diff / 1000) % 60;
+        var minutes = Math.floor(diff / (1000 * 60)) % 60;
+        var hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+        document.getElementById('counter-time').textContent =
+            days + ' days, ' + hours + ' hours, ' + minutes + ' minutes, and ' + seconds + ' seconds...';
+        }
+
+        formatToday();
+        updateCounter();
+        setInterval(updateCounter, 1000);
+    </script>
+
+  </body>
+</html>
