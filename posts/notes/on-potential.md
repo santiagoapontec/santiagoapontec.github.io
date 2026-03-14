@@ -1,0 +1,10 @@
+---
+title: Where cowards go to die
+date: 3/14/2026
+---
+
+Potential is where cowards hide.
+
+Either you have sufficiently concrete evidence and enough volume to show you are going somewhere, or you admit that you are yet to do anything with yourself and that you’re just like everyone else.
+
+Anything in between, and you stay in a perpetual state of already but not yet^[Some of you may point out that I’ve borrowed the statement from Christian theology. That’s indeed the case, but note I use it with no reference to it whatsoever.] — a place where you have enough intellectual arguments to protect against questions of progress, but also where you have enough (delusional^[It’s delusional confidence because in this state of already but not yet, you have no proof that you are what everyone says you could be (or even who you yourself think you could be). You have nothing to fall back on except words and statements — if you can’t point to a body of evidence that validates what people (or you yourself) say about you, you’re a phony in my book.]) confidence to think it’s just a matter of time before things sort themselves out and you become who you are supposed to be.
