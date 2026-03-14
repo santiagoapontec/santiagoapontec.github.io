@@ -251,6 +251,9 @@ function buildDaily() {
   const dailyHtmlPath = path.join(__dirname, 'daily.html');
   let dailyHtml = fs.readFileSync(dailyHtmlPath, 'utf8');
   dailyHtml = dailyHtml.replace(
+    /var entries = \[[\s\S]*?\]/,
+    `var entries = [/* DAILY-ENTRIES */]`
+  ).replace(
     /\/\* DAILY-ENTRIES \*\//,
     entryKeys
   );
