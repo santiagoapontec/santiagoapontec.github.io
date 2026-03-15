@@ -36,7 +36,7 @@ And that could be a satisfactory answer. The chance at living is the greatest gi
 
 _“Beating the game means you are allowed to live life — living life is the prize for beating the game”_
 
-So, what do I think are the differences between life and the game? Well, while to many it may seem that all of us are living life, the reality is that most of us are just playing the game — the illusion just comes becomes of the sheer number of players. It tricks us into thinking that the game and life are one.
+So, what do I think are the differences between life and the game? Well, while to many it may seem that all of us are living life, the reality is that most of us are just playing the game — the illusion just comes because of the sheer number of players. It tricks us into thinking that the game and life are one.
 
 But step back and think about it. What about what you think of as life, are you really choosing to live?
 
