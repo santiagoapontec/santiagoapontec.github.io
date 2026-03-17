@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>March 16th</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p>About fifteen months back, I wrote this</p>
+<blockquote>
+<p>I talk a lot and have many ideas, but few to show. My tongue walks further than my feet are willing to step.</p>
+</blockquote>
+<p>I’m embarrassed to admit — though I’ve known this for way longer than fifteen months — that I’m pretty well represented by that statement still. And one of the reasons why I think that’s a thing is because with a problem like this you don’t really face the consequences head on, they sort of slowly pile up and hit you like a truck at some point.</p>
+<p>And though I fortunately haven’t crashed with an eighteen-wheeler head on just yet, I’ve definitely had some long thinking sessions about what It’d be like to get hit by that truck.</p>
+<p>The embodiment of this is brought to life in my head as the scenario where one day I may wake up as a forty year-old and suddenly be faced with the fact that I’ve been going through the motions for the past two decades.</p>
+<p>And though I think I’m far away from that happening, I do feel that a close-cousin of that reality is slowly becoming mine — that is, slowly burning every remaining piece of myself with every new promise I break, every new idea I don’t execute on, and with every great script that I never really turn into a story.</p>
+<p>And one of the reasons that I have continued to live like this, is probably the fact that I’ve yet had to confront the consequences of not following up on the things I say.</p>
+<p>Though I promise myself I’ll finally consistently go to the gym and bulk up properly for once, my body is not in such terrible shape that I’m forced to see myself in the mirror and hate me — it’s just “good-enough” for me to get through most days and only feel disappointed in some.</p>
+<p>Though I promise myself that I’ll actually work on this new start-up idea that I have, I always end up leaving it for the shinier one that never fails to come. And because I’ve become adept at selling these ideas to people, it never seems to matter that I have no work to show, encouragement never fails to come.</p>
+<p>And though countless times I&#39;ve promised myself that I’m going to hold off on any new commitments and just focus on getting better at my fundamentals, I never fail to accept the shiny new object thrown my way — whether it&#39;s in the form of a job, a project, or whatever else.</p>
+<p>And like these, there are — unfortunately — many more to name.</p>
+<p>This page is in some way an attempt to break this cycle. The fact that it&#39;s live and people can see whether I’ve updated it helps, and the fact that I can look back on what I write and see what I’ve done also helps. But if I know one thing it&#39;s that no matter what I put in front of me, I’ve always been able to weave my way out of things through words, and I really don’t want that to be the case this time.</p>
+<p>I’m yet to create all the mechanisms I’d like to prevent that from being the case this time — but unlike other times, I’m not going to spend the foreseeable future idle just waiting for those systems to come. Whatever it is I can do to help it, no matter how small, I’ll do it.</p>
+<p>That today started with a stopwatch. I timed myself doing certain things throughout the day — just to see where my priorities are, and whether my tongue is walking further than my feet are willing to step...</p>
+<p>Here’s how the numbers looked today:</p>
+<p>Total time awake was sixteen hours.</p>
+<p>The time I tracked was spent in the following ways</p>
+<ul>
+<li>One hour running</li>
+<li>One hour in physiotherapy</li>
+<li>Thirty minutes having breakfast</li>
+<li>Five minutes making my bed</li>
+<li>Two and half hours translating some math notes into the website</li>
+<li>One hour having lunch</li>
+<li>One hour taking the dogs out</li>
+<li>One hour weight lifting</li>
+<li>One hour having dinner</li>
+</ul>
+<p>That amounts to a total of nine-hours and five-minutes tracked. Which means only 56% of my time today was tracked, of which I’d call less than 40% productive time<sup>1</sup>.</p>
+<p>It’s not pretty, but it’s what there is — tomorrow we try and improve, even if it&#39;s just a little bit.</p>
+<blockquote>
+<p>“Finish every day and be done with it. For manners and for wise living it is a vice to remember. You have done what you could; some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day; you shall begin it well and serenely, and with too high a spirit to be cumbered with your old nonsense. This day for all that is good and fair. It is too dear, with its hopes and invitations, to waste a moment on the rotten yesterdays.”</p>
+<p>Ralph Waldo Emerson — Letter to his daughter, Ellen (8th April 1854)</p>
+</blockquote>
+<pre><code>- Santi
+</code></pre>
+
+<div class="footnotes">
+<p class="footnote">(1) At least in the ways in which I want to be productive — which now is just mostly studying math. Those 2 hours should really look like as many hours as possible every day.</p>
+</div>
+        </div>
+    </article>
+
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
