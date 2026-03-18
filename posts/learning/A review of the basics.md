@@ -130,3 +130,53 @@ To understand how numbers are constructed, we need to understand the place value
 The place values are:
 
 ![Place value chart image](../images/PlaceValueChart.png)
+
+This means that whenever we are trying to deconstruct a number, we simply write it out and see where each digit falls in the place value chart.
+
+For instance, we would break the number 203,405 into
+
+- 2 hundred thousands
+- 0 ten thousands
+- 3 thousands
+- 4 hundreds
+- 0 tens
+- 5 ones
+
+Now, just to hammer down the concept let's work through it. Let's stary off with translating words into numbers
+
+- A hundred thousand = 100,000
+- A ten thousand = 10,000
+- A thousand = 1,000
+- A hundred = 100
+- A ten = 10
+- A one = 1
+
+Now it's just a matter of translating the words we wrote down for our number, to numbers. Let's re-write it to have it fresh in our minds.
+
+Two hundred thousands, 0 ten thousands, 3 thousands, 4 hundreds, 0 tens, and 5 ones.
+
+Now we just translate words into numbers
+
+$$ 100,000 + 100,000 + 0 + 1,000 + 1,000 + 1,000 + 100 + 100 + 100 + 100 + 0 + 1 + 1 + 1 + 1 + 1 = 203,405 $$
+
+We could also simplify this to be
+
+$$ (100,000 \times 2) + (10,000 \times 0) + (1,000 \times 3) + (100 \times 4) + (10 \times 0) + (1 \times 5) = 203,405 $$
+
+Finally, to say numbers correctly, we can follow these steps
+
+1. We group our number following the commas
+2. We say each group with its unit word
+
+So, for 203,405 we would
+
+1. Group by commas, so 203 and 405
+2. Say each group by its unit word, so 203 thousand, and 405 five
+
+We can group it all together and say _two hundred three thousand, four hundred five._
+
+<div style="text-align:center;">
+--end of study journal entry--
+</div>
+
+<br>

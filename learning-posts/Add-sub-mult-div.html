@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../learning.html" style="color: inherit; text-decoration: none;">Learning</a></h1>
+        <p>Study journals for things I've learnt / I'm learning</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>Addition, subtraction, multiplication and division</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>A review of addition</strong></p>
+<p>Addition, at its core, its just the asking ourselves of the simple question <em>&quot;I have some of this thing, and some of that thing, how many things do I have?&quot;</em>. The easiest way we can understand this concept, is visually, through the use of a number line.</p>
+<p>To illustrate, let&#39;s work through the following example.</p>
+<blockquote>
+<p>I have 3 apples and 4 pears, how many fruits do I have?</p>
+</blockquote>
+<p>For simplicity sake, let&#39;s draw a number line and put a character ^ to symbolize the place on the line where we should start.</p>
+<p>First, we&#39;d draw our character on the number three, since we know we are starting with three apples. Its just that we want to know how many total fruits we have after counting the pears.</p>
+<pre><code>←───|───|───|───^───|───|───|───|───|───→
+    0   1   2   3   4   5   6   7   8
+</code></pre>
+<p>Now, all we have to do is figure out what our result is if we were to add the pears to our apples. Adding, in terms of the number line, simply means moving a specific number of unit lenghts to the right equal to the quantity we&#39;ve been told to add. (As you&#39;ll remember, a unit lenght is simply the distance from one number to another in the number line.)</p>
+<p>So, let us use the character &gt; to represent <em>one</em> move to the right, and, let us use the <em>second</em> apperance of the character ^ as our end result.</p>
+<pre><code>←───|───|───|───^───|───|───|───^───|───→
+    0   1   2   3 &gt; 4 &gt; 5 &gt; 6 &gt; 7   8
+</code></pre>
+<p>Notice how we moved four unit lenghts to the right (four times the size of a unit lenght, or four jumps from one number to the next) and our ending place is the number seven.</p>
+<p>This means, if we have three apples and four pears we have seven fruits total.</p>
+<p>We can follow the same pattern if we wanted to find the sum of any numbers using a number line.</p>
+<div style="text-align:center;">
+--section break--
+</div>
+
+<br>
+
+<p>Now that we intuitively understand the concept of addition, we can learn about some of the properties that it has.</p>
+<p>First, addition has what we call the commutative<sup>1</sup> property. That is, the order in which numbers appear on a sum will not change its result.</p>
+<p>This means</p>
+<blockquote>
+<p>If A and B represent whole numbers, then</p>
+<p>A + B = B + A</p>
+</blockquote>
+<p>Second, addition has an associative property. That is, when presented with a sum of numbers, no matter how you decide to group them, the answer will not change.</p>
+<p>So</p>
+<blockquote>
+<p>If A, B and C are whole numbers, then</p>
+<p>(A + B) + C = A + (B + C)</p>
+</blockquote>
+<p>Finally, we say that addition has the additive identity. That is, any whole number that is added to <em>zero</em> will result in the same number.</p>
+<p>This means</p>
+<blockquote>
+<p>If A is any whole number</p>
+<p>A + 0 = A</p>
+</blockquote>
+<div style="text-align:center;">
+--section break--
+</div>
+
+<br>
+
+<div class="footnotes">
+<p class="footnote">(1) Commutative means <em>relating to or involving substitution or exchange</em>, as you see, the property is all about the exhanging of the places of numbers in an equation</p>
+</div>
+        </div>
+    </article>
+
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
