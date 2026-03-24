@@ -206,13 +206,19 @@ function buildDaily() {
 
   const template = fs.readFileSync(path.join(__dirname, 'post.html'), 'utf8');
   const files = fs.readdirSync(dailyDir).filter(f => f.endsWith('.md'));
-  const posts = [];
+  
+  // Separate reflections and play-by-plays
+  const reflections = files.filter(f => !f.includes('-pbp'));
+  const playByPlays = files.filter(f => f.includes('-pbp'));
+  
+  // Build a set of dates that have play-by-plays
+  const pbpDates = new Set(playByPlays.map(f => f.replace('-pbp.md', '')));
+  // Build a set of dates that have reflections
+  const reflectionDates = new Set(reflections.map(f => f.replace('.md', '')));
 
-  files.forEach(file => {
-    const raw = fs.readFileSync(path.join(dailyDir, file), 'utf8');
-    const { data, content } = matter(raw);
-    const slug = file.replace('.md', '');
+  const entries = [];
 
+  function buildPost(file, slug, content, data, nextSlug, prevSlug, nextLabel, prevLabel) {
     const footnotes = [];
     let footnoteIndex = 0;
     const contentWithFootnotes = content.replace(/\^\[([^\]]+)\]/g, (match, footnoteText) => {
@@ -230,6 +236,19 @@ function buildDaily() {
         '\n</div>';
     }
 
+    // Build navigation HTML
+    let navHtml = '';
+    if (nextSlug || prevSlug) {
+      navHtml = '<div class="post-nav">';
+      if (prevSlug) {
+        navHtml += `<a href="${prevSlug}.html" class="post-nav-link">← ${prevLabel}</a>`;
+      }
+      if (nextSlug) {
+        navHtml += `<a href="${nextSlug}.html" class="post-nav-link">${nextLabel} →</a>`;
+      }
+      navHtml += '</div>';
+    }
+
     const section = sections.daily;
     let postHtml = template
       .replace('<!-- SECTION-TITLE -->', section.title)
@@ -237,17 +256,44 @@ function buildDaily() {
       .replace('<!-- SECTION-PAGE -->', section.page)
       .replace('<!-- POST-TITLE -->', data.title)
       .replace('<!-- POST-SUBTITLE -->', '')
-      .replace('<!-- POST-BODY -->', htmlContent + footnotesHtml);
+      .replace('<!-- POST-BODY -->', htmlContent + footnotesHtml)
+      .replace('<!-- POST-NAV -->', navHtml);
 
     fs.writeFileSync(path.join(outputDir, slug + '.html'), postHtml);
+  }
 
-    const d = new Date(data.date);
-    const entryKey = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
-    posts.push({ title: data.title, date: data.date, slug, entryKey });
+  // Process all files
+  files.forEach(file => {
+    const raw = fs.readFileSync(path.join(dailyDir, file), 'utf8');
+    const { data, content } = matter(raw);
+    const slug = file.replace('.md', '');
+    const isPbp = file.includes('-pbp');
+    const dateKey = isPbp ? slug.replace('-pbp', '') : slug;
+
+    const hasPbp = pbpDates.has(dateKey);
+    const hasReflection = reflectionDates.has(dateKey);
+
+    let nextSlug = null, prevSlug = null, nextLabel = '', prevLabel = '';
+
+    if (isPbp && hasReflection) {
+      prevSlug = dateKey;
+      prevLabel = 'Reflection';
+    } else if (!isPbp && hasPbp) {
+      nextSlug = dateKey + '-pbp';
+      nextLabel = 'Play by Play';
+    }
+
+    buildPost(file, slug, content, data, nextSlug, prevSlug, nextLabel, prevLabel);
+
+    if (!isPbp) {
+      const d = new Date(data.date);
+      const entryKey = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+      entries.push({ date: data.date, entryKey });
+    }
   });
 
   // Update entries array in daily.html
-  const entryKeys = posts.map(p => `'${p.entryKey}'`).join(', ');
+  const entryKeys = entries.map(p => `'${p.entryKey}'`).join(', ');
   const dailyHtmlPath = path.join(__dirname, 'daily.html');
   let dailyHtml = fs.readFileSync(dailyHtmlPath, 'utf8');
   dailyHtml = dailyHtml.replace(
@@ -259,8 +305,7 @@ function buildDaily() {
   );
   fs.writeFileSync(dailyHtmlPath, dailyHtml);
 
-  console.log('Built ' + posts.length + ' daily posts:');
-  posts.forEach(p => console.log(' - ' + p.title + ' (' + p.date + ')'));
+  console.log('Built ' + files.length + ' daily posts');
 }
 
 function buildLearning() {
