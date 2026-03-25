@@ -3,7 +3,7 @@ title: A review of the basics
 category: Math
 journal: Pre-Algebra
 journal-title: Pre-Algebra
-journal-order: 1
+journal-order: 2
 order: 1
 date: 3/16/2026
 ---

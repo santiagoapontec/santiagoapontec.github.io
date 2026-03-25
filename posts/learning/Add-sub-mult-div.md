@@ -3,7 +3,7 @@ title: Addition, subtraction, multiplication and division
 category: Math
 journal: Pre-Algebra
 journal-title: Pre-Algebra
-journal-order: 1
+journal-order: 2
 order: 2
 date: 3/17/2026
 ---
@@ -77,3 +77,5 @@ This means
 </div>
 
 <br>
+
+
