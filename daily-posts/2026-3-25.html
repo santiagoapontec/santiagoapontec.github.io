@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>March 25th</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p>For my birthday I was gifted a ticket to fly to and from the United States for about two weeks in May.</p>
+<p>I spent about four years of my life in the States - I went to college there. After graduating, which would&#39;ve been about a yer ago now, I moved back to my home country. I haven&#39;t been back since.</p>
+<p>Going back will inevitably bring back a lot of memories, as well as it&#39;ll bring up many conversations. Conversations around what I&#39;ve done since leaving, who I am now, what my plan is, etc, etc, etc... And though I&#39;d internally like to claim I&#39;m not really moved by other&#39;s perception of me, I do think what people see you as is generally a good indication of what you&#39;re showing the world. Bottom line being, I wouldn&#39;t want the world to look at me with a condenscing <em>It&#39;s going to be alright</em> face when I&#39;m back.</p>
+<p>I&#39;m leaving May 4th, that&#39;s to say I have forty days left until I hit American soil again. I don&#39;t know that I can drastically change my life in forty days so that&#39;ll have a solid ground for the story I&#39;d wish to tell. But I do know that forty days is more than enough time to create a meaningful enough starting force to take me to where I want to be.</p>
+<p>In very vague words, my goal is that when someone asks me what I&#39;ve been up to from May 4th and on I can be proud enough about myself and what I&#39;ve done to tell them about what I&#39;ve been up to over the forty days prior.</p>
+<p>As it&#39;s common with me, there&#39;s so much I&#39;d like to do in these forty days. I&#39;d like to work at being jacked. I&#39;d like to get super good at math and coding. I&#39;d like to have a proficient working level of physics knowledge. I&#39;d like to be a much better speaker. I&#39;d like to have upped my knowledge of God and theology by a whole lot. I&#39;d like to have run many miles and prepare for big races. And much more.</p>
+<p>But if there&#39;s a lesson I sure should&#39;ve learned by now is that I plan and wish for too much and end up doing nothing.</p>
+<p>After this weekend I&#39;ve figured that a rough goal for the next couple of months is leaving home again. It&#39;s contradictory to be fighting and arguing with my parents and still be receiving their support<sup>1</sup>. That is, if I do think that I&#39;m &quot;right&quot; in my side of what causes my arguing and fighting, what grounds do I even have to argue if it&#39;s them putting a roof over my head, feeding me, and generally paying for what I spend.</p>
+<p>I do think I&#39;m right, and because I do I need to stop living in that contradiction.</p>
+<p>The first thing that needs to happen is I need to stop doing things which they&#39;re paying for. Say, physiotherapy for instance, or regular therapy. I&#39;ll still accept the shelter and food, but because I am, I&#39;m vowing also to keep my opinions and fighting-arguments to myself - If I&#39;m staying at all I&#39;ll stay in their terms, as is fair.</p>
+<p>Now, if the rough goal is leaving home I know that&#39;ll I need money, as of course I&#39;ll need to pay for my own housing and food. I do have some savings, which I also vow to take care of, but I can&#39;t realistically live off them long term, which means I need some sort of new consistent form of income.</p>
+<p>The reason I came back to my parents in the first place was to be able to not have to work a job and have more time to study and figure out what it is that I am going to do with myself. I know very well that when leaving I&#39;m probably not going to be equipped to make it out on my own terms, which really just means I&#39;ll need to get a job.</p>
+<p>That&#39;s fine, I know now why I&#39;m making that trade-off, I don&#39;t want to live at home (for the reasons stated above) and I yet don&#39;t have a way of making money for myself without a traditional job.</p>
+<p>Anyways, to that point, I know that&#39;s not what I&#39;d like to do long term (or for any amount of time more that neccesary really...) and I also know (or at least think) that my ticket out of that is knowledge - <em>true and deep knowledge</em>. One could more specificially define that as skills that one could use in order to make a living for him/herself. And I happen to think that knowing the fundamentals really well will open up doors for you to grab whatever other knowledge you&#39;d like, therefore opening doors to more skills, which in turn increases the probability that you&#39;ll be well equipped to make it on your own.</p>
+<p>In that order of ideas, the most productive thing I could do in the next few months<sup>2</sup> is try to pack as much of that learning of fundamentals as I can before I&#39;m forced to have to slow down on the learning since I&#39;ll need to allocate some time for the job.</p>
+<p>That&#39;s to say, if the ultimate goal is to not have to work job to sustain myself, and the thing I think gets me there is knowledge, and the thing I think is keeping from having as much knowledge as I can is a lack of an understanding of the fundamentals, then the most valuable thing I can do with my time now is study the fundamentals.</p>
+<p>Now, that means acknowledging that if I&#39;m going to focus on that (which we concluded I need to) all other things will take a blow. That&#39;s to say, I&#39;m not going to love the way my body looks. I&#39;m not going to be as prepared to run races as I&#39;d like. I&#39;m not going to be the most equipped theological debater in the world. Etc, etc, etc.</p>
+<p>And that&#39;s okay - I need to be okay with that. And I need to deeply internalize that notion so that I may put my sole focus<sup>3</sup> on doing what I need to be doing.</p>
+<p>Forty days start now. Let&#39;s see how much I can actually do.</p>
+<pre><code>- Santi
+</code></pre>
+
+<div class="footnotes">
+<p class="footnote">(1) Say monetarily</p>
+<p class="footnote">(2) Since I can&#39;t really move before going to teh states because no job would give me two weeks vacation when I&#39;m first starting</p>
+<p class="footnote">(3) Though not mentioned fully in this essay, as I said yesterday, of course I&#39;m aware God is the center of everything, and that everything I&#39;m doing is ultimately no ticket to salvation. That&#39;s to say, of course prayer and bible reading will still be on the top of my priority list. I just also need to take some responsability for what it is that I do with myself - we&#39;re also part of our faith.</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><a href="2026-3-25-pbp.html" class="post-nav-link">Play by Play →</a></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
