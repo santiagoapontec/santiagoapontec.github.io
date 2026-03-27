@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>March 26th - Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>7:03 AM</strong> - Just woke up. Out of bed already. Going to go through the normal routine - breakfast, shower, cleaning up the room and such. Will be back so we can start off the day early and get ahead of the work.</p>
+<p>PS: Ended up going to bed at about 10 PM maybe, read about two chapters of the book.</p>
+<p><strong>8:41 AM</strong> - Back at the desk, finished the usual start of the day business. Going to get right to studying - hoping to have at least 3 hours of work done before having lunch. Feeling okay, not great, not terrible.</p>
+<p><strong>8:56 AM</strong> - Need to take my dog out really quick, need to stop the session for a min. That&#39;s 15 mins completed at least...</p>
+<p><strong>9:10 AM</strong> - Back at the desk. Getting right back to it.</p>
+<p><strong>10:20 AM</strong> - Finished another block of studying. Still feeling good and motivated, but going to stop to get a drink (and maybe do some push-ups, thinking of adding a set every hour of work) and to write this up.</p>
+<p>We&#39;re sitting at 102 XP today, and we&#39;ve worked one hour and twenty-five mins total. So we&#39;re going at a rate of 72 XP per hour.</p>
+<p>I&#39;ll be back in a sec.</p>
+<p><strong>10:37 AM</strong> - Back again. About 15 mins it took me, and it genuinely felt like 5...time really goes by quick! That&#39;s a 3x difference between the time I thought I took and what I actually took.</p>
+<p>Anyways, got a drink and a snack, knocked 12 regular push-ups and 5 reverse grip push-ups<sup>1</sup>. We&#39;ll hunker down for at least another hour work, but hoping to get to the 3-hour mark by lunch - which should be at about 12:30 or 1:00.</p>
+<p><strong>11:57 AM</strong> - Just finished another session of studying. That&#39;s a one hour and twenty-minute session, so we&#39;ve worked a total of two hours and forty-five minutes. Going to hit another quick fifteen-minute session just to call it three hours.</p>
+<p><strong>12:12 PM</strong> - That&#39;s 15 more. Three hours studying, sitting at 249 XP for the day - rate of 82 XP/hr.</p>
+<p>It&#39;s definitely getting monotonous and tedious at this point - it&#39;s hard to imagine I need to do this for roughly the same amount of time again today (and even more). These are the little things one has to get through though. If I can&#39;t get through the tediousness of doing simple problems for hours on end, how am I going to manage doing tough problems consecutively - need to train the muscle.</p>
+<p>I&#39;ve also found that, like reviews say, the platform is great at getting you procedural fluency - if you put in front of me a problem that requires me to use the rules I&#39;ve learned I can solve it now. But I don&#39;t know that my conceptual understanding (at least the deep one) has grown much.</p>
+<p>It&#39;s tempting to want to switch and figure out a way to keep my conceptual and procedural fluencies on par, but I don&#39;t know how to do that since my procedural fluency goes up way faster and with less friction than my conceptual understanding does.</p>
+<p>That&#39;s not to say I&#39;ll leave the latter in the dark - that&#39;s the one I want. But perhaps a way to get there is to get procedurally fluent enough and then just try and decode the concepts a bit after.</p>
+<p>My vague idea is getting to a point where I&#39;ve completed at least 4th and 5th grade math, and then look back at all the topics I&#39;ve learned, and at that point start creating mini-posts for the website that include the conceptual understanding of these topics. For now, we just focus on putting in the time solving problems.</p>
+<p>Another thing I did want to do was to start Anki - I read some <a href="https://augmentingcognition.com/ltm.html">essays</a> by <a href="https://andymatuschak.org/">Andy Matuschak</a> and <a href="https://michaelnielsen.org/">Michael Nielsen</a> talking about how to augment long term memory, and how that helps in a number of different ways (like in the creative process or generally being a better and more articulate thinker). Anyways, they were compelling enough to want me to give Anki a try - I&#39;ll just start with basic things I wan&#39;t to commit to memory, like certain mathematical concepts (say being able to explain stuff like greatest common factors, least common multiples, least common denominators without apparent effort), and we&#39;ll see how it works.</p>
+<p><strong>12:41 PM</strong> - just remembered I said push-ups for every hour of work. Just did 12 regular and 5 of the reverse grip - those really leave my wrist hurting haha, we will see if I can tolerate those long term or if I&#39;ll have to slow down.</p>
+<p>Also, going down to eat lunch now. Will come back after and get some more studying done. When my sister gets home from school we&#39;ll probably take the dogs out for play-time, so ideally I cram some good work in before then.</p>
+<p><strong>1:40 PM</strong> - Finished eating and back at the desk. Going to try and shoot for 90 mins of work (or, <em>an hour and a half</em>, which sounds longer and cooler)...or whatever minutes I get before my sister gets home.</p>
+<p>Math Academy says we&#39;re 51% through 4th grade math, let&#39;s see how much we can end the day at.</p>
+<p><strong>3:10 PM</strong> - Just wrapped up 90 mins of studying. If I&#39;m adding correctly that puts us at four and half hours of total studying for the day. We&#39;re currently sitting at 415 XP for the day (rate of 92 XP/hr).</p>
+<p>Math Academy says we&#39;re about 64% of the way through the course.</p>
+<p>Going to take a quick break, see if my sister comes, and if not, I&#39;ll get back to it. Either way we&#39;ll definitely have at least one more 90 min session today.</p>
+<p>Definitely want to try and do some of the Anki stuff - but I have felt through the day (just thinking about it) how little time I would&#39;ve had if I did all that popped in my mind today. Say I added a few of the things I would&#39;ve wanted to do like running, doing the Anki set up, plus doing some of the conceptual breakdowns of topics. Imagine each of those took an hour each (which is a conservative estimate) - but I&#39;ve already spent all of my &quot;productive day&quot; studying math, and that&#39;s only been four and half hours! So I would&#39;ve had to cut my main focus by 66% in order to add the other things.</p>
+<p>The question is, would I have gotten the equivalent accumulated benefit in the other areas to justify a 66% reduction in math time? I don&#39;t know, probably not though.</p>
+<p><strong>3:27 PM</strong> - Going to take the dogs out for playtime with my sister, will be back!</p>
+<p><strong>4:31 PM</strong> - Back at the desk. Ended up coming back early because of the rain, and ended up watching a 30-min Youtube video...it was Veritasium though, so maybe we can half-excuse it as educational.<sup>2</sup></p>
+<p>Don&#39;t really feel like jumping on Math again, my brain feels scattered, like it wants to go and research stuff I&#39;m not going to do or that is way beyond me just so it can feel accomplished without doing anything.</p>
+<p>At a minimum I have to still do one more 90-min session + write the daily post for today, so I need to get cranking.</p>
+<p>I&#39;ll start the 90-min math session and hopefully get into a rythm.</p>
+<p><strong>6:07 PM</strong> - Just finished another 90-min study session (took about 5 mins to get water, that&#39;s the extra time). That puts us at six hours of total studying today. Good increase from yesterday, but nonetheless still less than a full work day...which considering I have no full time job I should at least be getting eight hours in. But hey, still progress, we just need to be a bit better tomorrow.</p>
+<p>Still need to write the daily post. Probably going to take a quick break (no screens, to clear the mind) and then come back and write that before dinner so we can have a bit of time to decide where we want to focus for the rest of the night.</p>
+<p>We finished the day with 566 XP on the day (rate of 94 XP/hr) and with a course completion percentage of 76.</p>
+<p><strong>6:30 PM</strong> - Just re-read the entire play by play of the day so far. Two things popped up, 1) I need some sort of grammar tool for the markdown files I&#39;m writing, there&#39;s too many little mistyping/misspelling mistakes I don&#39;t catch because there&#39;s so many words on the screen, and I have no filter between writing and posting, it&#39;s just re-reading and editing - I&#39;ll have to see if there&#39;s any way to add grammar checks on VS Code. 2) It&#39;s kind of surprising how little I remember of what I wrote / of the day, it feels as if though I&#39;ve just been mechanically working, and so if I didn&#39;t have a written record of what I did or what I thought I&#39;m not sure I could give you an accurate picture of my day.</p>
+<p>One important thing comes out of that last reflection - I don&#39;t want to live every day of my life like that. I&#39;d like to have days in which I&#39;m so present and the day is so rich I have a clear picture of the day at the end of the day (and for a long time thereafter hopefully). The question that&#39;s left unanswered is whether days like the ones I had (which feel like mechanical work) are required for a life full of rich/present days - I&#39;m really not sure.</p>
+<p>Anyways, about to start writing the daily post. Not sure what I&#39;ll write yet, but I&#39;ll try to make it as good as possible.</p>
+<p>PS: Maybe there&#39;s a cool way I can incorporate a &quot;Wants/To-do list&quot; that lives on the website, that way I will both 1) have a place where to jot down thoughts like these one so I can reference them to take them on later, and also 2) have a way to see just how many things I want and perhaps that&#39;ll morph into me understanding sometimes I just get urges that aren&#39;t really important to me - which will help me prioritize. (I guess figuring out how I want a to-do/wish-list on this website is the first item in the to-do list)</p>
+<p><strong>7:00 PM</strong> - Finished the daily post, it actually turned out way better than I expected. I like writing...when I think I write cool stuff that sounds nice.</p>
+<p>Going to go have dinner and fold some laundry. Will be back after that and see what we&#39;ll do for the rest of the night. But I do have a feeling it&#39;ll be winding down with some reading, we&#39;ll see.</p>
+<p><strong>7:54 PM</strong> - All done eating. Going to do some quick research and see if I can do some sort of grammar check in VS Code.</p>
+<p><strong>9:52 PM</strong> - Research took like 5 mins - I downloaded a VS Code extension and now words the extension thinks are badly written it underlines in blue. Awesome!</p>
+<p>I did spend the rest of two hours playing around with the Figma design file of the website. I designed a couple more screens I&#39;d like to add and one animation that I think would be super fun to have on the website. It was fun to get to just design and live play land for a while. But it&#39;s also good that I was limited to doing that at the end of the day with some sort of stop timer since I needed to go to bed - otherwise that might&#39;ve been my entire day...</p>
+<p>Though it&#39;s hard, since I&#39;d like to just figure out how to make those design changes into website ready code, I know I need to just work at them slowly and patiently whenever gaps open up <strong><em>around</em></strong> my main work and goal.</p>
+<p>Going to head to bed now. Will try to read a tiny bit, but probably not much. I want to wake up a bit earlier tomorrow to try and seize some more of the day.</p>
+
+<div class="footnotes">
+<p class="footnote">(1) These are hard haha, my wrists hurt now.</p>
+<p class="footnote">(2) Opening Youtube was a direct reflex of being frustrated and annoyed at someone, which is interesting - I use it as a mechanism to take my mind off of that at least. I should change that.</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><a href="2026-3-26.html" class="post-nav-link">← Reflection</a></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
