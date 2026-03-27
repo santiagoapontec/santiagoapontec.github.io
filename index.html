@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
     <style>
         * {
@@ -101,6 +102,16 @@
             text-decoration: underline;
             text-underline-offset: 3px;
         }
+
+        .stickman-counter {
+            text-align: center;
+            font-size: 11px;
+            font-style: italic;
+            color: #bbb;
+            margin-top: 24px;
+            margin-bottom: 60px;
+        }
+
     </style>
 
   </head>
@@ -135,6 +146,8 @@
         <a href="mailto:placeholder@email.com">Contact</a>
     </footer>
 
+    <p class="stickman-counter" id="stickman-counter"></p>
+
     <script>
         var launchDate = new Date('2026-03-11T22:23:00');
 
@@ -167,6 +180,45 @@
         formatToday();
         updateCounter();
         setInterval(updateCounter, 1000);
+    </script>
+
+    <div class="stickman-stage">
+        <img id="stickman" src="images/run1.png" style="position:fixed; bottom:0px; left:0px; width:35px; height:45px; object-fit:contain;">
+    </div>
+
+    <script>
+        // Sprite cycling
+        var frame = 1;
+        var s = document.getElementById('stickman');
+        setInterval(function() {
+            frame = (frame < 1 || frame >= 12) ? 1 : frame + 1;
+            s.src = 'images/run' + frame + '.png';
+        }, 80);
+
+        // Movement
+        var px = 0;
+        function moveTick() {
+            px += 0.55;
+            if (px > window.innerWidth) px = -35;
+            s.style.left = px + 'px';
+            requestAnimationFrame(moveTick);
+        }
+        moveTick();
+
+        var launchDate = new Date('2026-03-11T22:23:00');
+
+        function updateCounter() {
+            var now = new Date();
+            var elapsedMinutes = (now - launchDate) / 60000;
+            var miles = elapsedMinutes / 13;
+            var display = miles.toFixed(1).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+            document.getElementById('stickman-counter').textContent =
+                'Stickman has run ' + display + ' miles since launch';
+        }
+
+        updateCounter();
+        setInterval(updateCounter, 1000);
+
     </script>
 
   </body>
