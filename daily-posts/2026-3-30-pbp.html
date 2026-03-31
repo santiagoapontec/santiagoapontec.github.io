@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>March 30th Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>8:57 AM</strong> - Woke up about an hour and a half ago. Already had breakfast and I&#39;m about to start on daily decompositions again. Going to do one, and then I&#39;ll go shower, just so momentum is rolling when I get back.</p>
+<p>The goal for today is to finish this at any cost - it&#39;s my sole focus.</p>
+<p><strong>9:51 AM</strong> - Just finished one more decomposition. Took me about another hour that.</p>
+<p>I&#39;m liking the way the notes are turning out, and the small insights I&#39;m getting - I&#39;m thinking I may want to show these to world, as a way of also peeling the layer on how that part of the work is done, I think it does reveal some things around how I see things (really how I see and analyze myself, which is a core part of at least how I&#39;m trying to effect change).</p>
+<p>It&#39;s also just a way to have some work to show with less effort, lets no kid ourselves here. But I do think there&#39;s some value. Perhaps its as easy as linking to the Google doc where I write the notes at the end of the review page.</p>
+<p>Anyways, as promised to myself I&#39;m going to go take a shower and I&#39;ll be back for some more decompositions.</p>
+<p><strong>10:58 AM</strong> - Alright, shower and clothes folding done. Back at the chair by the pool on the computer and about to get to work on the 4th decomposition.</p>
+<p>Actually fairly excited.</p>
+<p><strong>11:40 AM</strong> - Boom, another one done. These things are genuinely taking an hour each haha, I don&#39;t know how I&#39;m going to keep this up every Sunday - but that&#39;s something we will figure out next Sunday and every Sunday after that.</p>
+<p>Taking a quick break, will be back.</p>
+<p>You know, sometimes I wish I could just show people these things and have them see just what I see in me. Because I&#39;m genuinely proud and amazed at myself when I write and do these things - I can see the potential exercising itself.</p>
+<p>But you can&#39;t just ask people to care, you&#39;ve got to just do things and eventually they&#39;ll care. You don&#39;t need someone who&#39;s wanting to look at the rawest version of your work and applaud you for it - you want people to look at your work and *want to dig up your old and raw work to see just how you manage to make what you do now.</p>
+<p>In both people look at your rawest form. But in one you&#39;re expecting them to, in the other you&#39;ve earned it.</p>
+<p><strong>11:59 AM</strong> - Back again. There&#39;s still five whole daily&#39;s to decompose. I&#39;m not sure how we&#39;ll manage, but we&#39;ll manage. We just have to keep doing the thing.</p>
+<p><strong>12:57 PM</strong> - Just finished two more daily decompositions. That flowed pretty well, and I&#39;m pretty happy with what I&#39;ve gathered so far (I definitely need to put the Google doc link somewhere<sup>1</sup>).</p>
+<p>Lunch is served, so I&#39;ll go eat. I know that I&#39;ll probably feel full and sleepy after, but if I&#39;ve learned anything from reading about myself for three-hours I know that what I need to do is just muster up the strenght to open the computer, start work even if for five-minutes, and then it&#39;ll all become easier from there.</p>
+<p><strong>2:21 PM</strong> - All done with lunch, took a bit longer than usual but it was good, has some nice time speaking with the family.</p>
+<p>Got three decompositions left, we got this.</p>
+<p><strong>3:01 PM</strong> - All done with another one, two left. Feeling like I&#39;m loosing juice and like I want to stop, but hey, we do it tired, we do it anyways.</p>
+<p><strong>3:26</strong> - I&#39;m probably half-way through the new decomposition. Starting to feel a bit dissociated, going to take a quick break and I&#39;ll be back.</p>
+<p><strong>3:48 PM</strong> - Okay, I&#39;m back. Definitely feeling unenergized and not terribly sharp. I&#39;m also thinking about the fact that I need to do the full written review <em>after</em> finishing these one-and-a-half reviews, and I have absolutely no idea how to do that.</p>
+<p>Anyways, it is what we ought to do, so we&#39;ll do it.</p>
+<p><strong>4:35 PM</strong> - Just finished the second-to-last decomposition! One more left now.</p>
+<p>Going to take a quick break and try to re-group, I don&#39;t know how I pulled off the last one but I did - I just don&#39;t feel sharp and attentive.</p>
+<p>Maybe coffee? I don&#39;t really drink coffee.</p>
+<p><strong>5:28 PM</strong> - Alright, back the computer.</p>
+<p>I ended up exercising, nothing too fancy, I think at most it was 20-25 minutes of exercise and it was ridicuosly simple - three sets of body-weight squats, push-ups and bicep curls.</p>
+<p>It was really good, demanded some sweat off of me, and I feel a bit more in it, at least more than I did before.</p>
+<p>I&#39;d also forgotten just how much of a confidence boost a good pump is. I&#39;m not sure if the lighting was exceptional but for that quick of a work-out it was a 10/10 pump. Going to need to do more often - not only because of the pump, but it was a pretty good pretty quick workout to both feel challenged and also good enough to come and work afterwards.</p>
+<p>Now it&#39;s time to get back to work. I&#39;m going to get cranking on the last daily decomposition and I was thinking I may write the daily after that. I fear that if I leave that last writing the full review may not allow me to finish a proper daily for today.</p>
+<p>PS: I also was falling on the trap of admiring my work too much - I probab;y spent five-minutes looking at the notes I submitted to the webpage today and thinking how great they looked and how awesome they sounded. The workout was a good way to <em>stop being so impressed and start getting more involved</em>.</p>
+<p><strong>6:25 PM</strong> - All done with decompositions. Not feeling like I ended on my best work, but they are done after all.</p>
+<p>Going to step back from the computer a quick second and I&#39;ll come back to write the daily - I need to do that before dinner for sure.</p>
+<p>I also have no idea wether I should also be reviewing the essays, notes and learning boards I&#39;ve posted / posted on for the written review of the week. But we&#39;ll figure that out I guess.</p>
+<p><strong>6:44 PM</strong> - Back the desk. Got me a pack of oreos and a cup of water<sup>2</sup>. No more needed for work.</p>
+<p>Going to go ahead and write up the daily for today.</p>
+<p><strong>7:31 PM</strong> - Just finished writing the daily. I genuinely don&#39;t know how I keep pulling off to write half-way decent things when I sit to type. Hopefully I don&#39;t nurture and not drain the ability the more I do it.</p>
+<p>Going to go get dinner. Still have to write the review.</p>
+<p>It&#39;s weird because I&#39;ve put in a decently big day today - that Google doc is almost 15 pages long and 8,000 words plus. It almost feels like an excuse not to finish - but its exactly that which I need to keep fighting against. This is just another sneaky way of getting me off course.</p>
+<p>Finishing what you start (or what you say you&#39;ll finish) is absolutely key to doing anything in life - remember that.</p>
+<p>I really feel a push to go and read some of the Bible or the book on David - I need to put in a big effort to finish this review so that I may spend some time doing that tonight. And if it&#39;s not tonight, I&#39;ll make sure to find time for it tomorrow - yes, between math, but we&#39;ll make time. We can.</p>
+<p><strong>9:02 PM</strong> - Back at the desk. Dinner was good, some good listening to music with my sister while we ate and they played games - it made me think that moments like these are the ones I&#39;ll treasure in 10 years like I treasure her cute 5-year old videos.</p>
+<p>Now, it&#39;s time to get working and get that review done. I have decent eneregy, but I have no idea how to do it - I think the most important thing to remember to just do something. It&#39;s the first iteration of what will hopefully be many, so it doesn&#39;t need to be perfect, it just had to be something that can be iterated on.</p>
+<p>On we go!</p>
+<p><strong>9:55 PM</strong> - I just finished a re-read of all of my notes. Time to get dirty and start writing - this is the ugly part!</p>
+<p><strong>10:39 PM</strong> - I&#39;m really pretty fried. I manage to write one small section - I think the style I&#39;m going with is unique &quot;topic/common thread&quot; commentary and then just hope everything smoothly connects together.</p>
+<p>Anyways. I&#39;m going to head to bed - maybe it&#39;s half excused half truth but I don&#39;t think working for the next hour and twenty minutes will yield any better results.</p>
+<p>I will however try and wake up early tomorrow (that&#39;s something like 5:30 or 6:00) to try and knock this thing out before breakfast to then actually start working on our main task, which lets not forget is studying mathematics.</p>
+<p>Still pretty proud of today&#39;s effort though - the tank is empty right now.</p>
+
+<div class="footnotes">
+<p class="footnote">(1) Let me have my little treat, I promise I won&#39;t tell anyone to take a look, I&#39;ll just leave a note for finding it.</p>
+<p class="footnote">(2) I&#39;m not a milk guy, sorry</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><a href="2026-3-30.html" class="post-nav-link">← Reflection</a></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
