@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>March 31st</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p>One thing that has been apparent to me today is that having second-degree things in check is a pretty good way to protect your ability to check your first-degree things, and also magnify how much you can check your first-degree things.</p>
+<p><em>Things</em> is just the word I use since I think many words could replace &quot;things&quot; - you could say responsibilities, desires, needs, etc... I choose to purposefully use the word <em>things</em> because I&#39;m thinking about my life rather broad sense today.</p>
+<p>If we examine how I roughly spend my time<sup>1</sup> and how I say I want <strong>to</strong> spend my time, one could easily argue that my main goal is to study mathematics with as much effort as I can.<sup>2</sup> And if that&#39;s the case, in an over-simplified (but perhaps, perfectly rational) world that must mean that everything else I do should be as means to study mathematics with as much effort as I can.</p>
+<p>Putting this in <em>degree</em> terms as I&#39;ve outlined above, studying mathematics with as much effort as I can would be a (and <em>the</em>) first-degree thing. Everything else is (or should) be categorized down by degree of importance as means to enabling focus on the first-degree.</p>
+<p>Coming back to the introductory point, in practical terms what I noticed today was that doing things I don&#39;t consider terribly important or even worth-caring about (in terms of practical goal achievement) are actually an essential part at magnifying my capacity to do the things I want to - and in turn would also be incredibly limiting in the case I were not to take care of them.</p>
+<p>The most specific example I can think of is how I relate to and interact with my parents. We don&#39;t have the best of relationships, and so that makes average day-to-day living pretty variable in terms of what we may (all) expect from each other.</p>
+<p>When inevitably something to get upset or argue about comes up I tend to mostly<sup>3</sup> think that I&#39;m in the correct side of the fight - meaning I have every right to argue, get upset or be prideful. And if for the sake of the argument we assume that to be the case<sup>4</sup>, it still makes no rational sense to <em>give into</em> the fighting or arguing because of what the means for the future.</p>
+<p>Utilizing the same example as above, if an argument happens and I decide to engage I forget to think that - even though I may be in the right - I live under my parents roof and so they have every right (even if irrationally) to ask me to do a million things they wouldn&#39;t have otherwise (like taking the trash out for the entire place, driving people places, organizing x or y room, etc...) just to get even because I made them upset. And that of course, even if I deeem it unfair, affects my ability to do the things I wanted to do with my day - which could be <em>studying mathematics with as much effort as I can</em>.</p>
+<p>And it won&#39;t only be the perfectly direct consequences. Indirect repercussions like my diminished focus because of the ruminating thoughts about the argument also come in to play in and affect what I deem to be the most important thing.</p>
+<p>What brings it all together really is the equation where we see how much more effort and time I put into arguing, and how much that affects my ability to do the first-degree thing vs how much effort and time I&#39;d have to put into diffusing and avoiding the bad situations and see how much <em>that</em> affects my capacity to do the first degree-thing.</p>
+<p>They are silly examples, but they could be things like;</p>
+<p>I&#39;d rather make my bed after I&#39;ve had breakfast and showered, but my mom would rather me do it before. Choosing to disregard her will cost me an argument over breakfast (call it six extra minutes), residual frustration and anger that affect my focus (call it an accumulated 10 mins through the day), and it will increase the likelihood of me going to YouTube to unwind to go up by 35% (equate that to say...7 minutes). All that - with our current assumptions - would cost me a hard twenty-three minutes (and that&#39;s with some simplified and basic assumptions for the sake of this argument).</p>
+<p>Making my bed on the other hand takes me 5-minutes<sup>5</sup>. Add whatever factor you want for the inconvenience as opposed to my preferred choice, and you probably still arrive at the conclusion that looking at the numbers it&#39;s terribly irrational to engage make my preferred choice.<sup>6</sup></p>
+<p>And that simple example expands to many more situations like it. Both with my parents and with many of the other things we all have to deal with in our days.</p>
+<p>I&#39;m not saying we should all be making mathematically precise calculations around every choice we&#39;re presented with through our days. But I am saying that it is worth thinking about what your version of the <em>make-the-bed</em> problem is, and how much it&#39;s costing you.</p>
+<p>At the end, It&#39;s all about what allows you to be at your best and therefore do your best work, right?<sup>7</sup></p>
+<pre><code>- Santi
+</code></pre>
+
+<div class="footnotes">
+<p class="footnote">(1) on average, lately...</p>
+<p class="footnote">(2) To gain a deep and fundamental understanding, yes</p>
+<p class="footnote">(3) Sometimes driven by rationality and other times by sheer pride</p>
+<p class="footnote">(4) Which it is invariably not</p>
+<p class="footnote">(5) I&#39;ve tested this, it&#39;s no more than ten if I need to change sheets</p>
+<p class="footnote">(6) In fact the math says it costs me 4.6x the time to choose my preferred option.</p>
+<p class="footnote">(7) Please do not take this essay as saying my relationship to my parents is a thing lower in my totem pole than learning addition - I did not write that. I only wrote of a framework that is useful in thinking about decision-making in servitude to your goals. Furthermore, the fact that <em>I do care</em> about having a good relationship with my parents only adds complexity to the equation (and more weight to my argument) since choosing the argument would hurt that.</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><a href="2026-3-31-pbp.html" class="post-nav-link">Play by Play →</a></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
