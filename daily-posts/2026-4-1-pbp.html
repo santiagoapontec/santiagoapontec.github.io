@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>April 1st - Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>6:40 AM</strong> - Got out of bed about 50-mins ago. Woke up at around 5:45, took me 10 mins to get up.</p>
+<p>Did indeed read for about 30-mins. Read the Bible, working through 1 Samuel. It&#39;s been good to read the book on the life David alongside this - it helps make everything much clearer and is generally just a good guide. Perhaps it&#39;ll be good to pick up similar books for other chapter of the Bible, at least for my first read through.</p>
+<p>Anyways, about to go have breakfast.</p>
+<p><strong>7:58 AM</strong> - All done with breakfast. About buckle in for the first session of the day. Let&#39;s make this good.</p>
+<p><strong>9:44 AM</strong> - Session done! That was about one-hour and forty-minutes counting breaks, we&#39;ll call it 90-mins. Racked up 118 XP total, so a rate of 70.8 XP/hr - back to a more normal rate (at least for our historical). We&#39;re sitting at 40% of the way through the course.</p>
+<p>I&#39;m hopeful we can put in a big effort today. I&#39;m going to take a quick break to shower and tidy-up the room and I&#39;ll be back for some more work pre-lunch. I&#39;m thinking I may do a bit of a longer session before work, just to see how much I can do, but we&#39;ll figure it out as it comes.</p>
+<p><strong>10:32 AM</strong> - All done with showering and room cleaning. Back at the desk with a snack now.</p>
+<p>Apparently lunch will be served at 12:30 pm today, so my plan is to try and just work from now until then. We will see how that goes.</p>
+<p>On we go.</p>
+<p><strong>11:03 AM</strong> - Need to go help grandma with some computer stuff - call this 30-mins. Will be back.</p>
+<p><strong>11:43 AM</strong> - Done helping grandma. Earned a nice little thank-you commission. Going to get right back to it and work until I get called to lunch.</p>
+<p><strong>12:45 PM</strong> - Wrapping up the session here. That&#39;s 90-min combining the two sessions starting at 10:32 AM. I&#39;m feeling dispersed - just not incredibly focused. We racked up 113 XP more (for a total of 231 XP) - so a rate of 75 XP per hour.<sup>1</sup></p>
+<p>But this is one time when the numbers don&#39;t really tell the whole story. I don&#39;t feel like I&#39;m giving it all I can - it&#39;s a weird feeling, because in a sense it feels like I&#39;m giving it all I can considering I feel like I described, but in some other sense it feels that if I could just break of this, I could be giving so much more.</p>
+<p>I&#39;m not really sure how you break out though, because I don&#39;t know how to even describe what I&#39;m feeling - it&#39;s a though my physical body feels weak too (I&#39;m okay though, I don&#39;t feel sick). We&#39;ll see if lunch helps.</p>
+<p>Anyways, we take a break and then we come back and try and do better.</p>
+<p><strong>4:36 PM</strong> - Had a long, deep, and emotional chat with grandma and my sister. I love that I have the freedom to just get to sit for three-hours and talk. I need to work to make sure that&#39;s still the case in the future.</p>
+<p>Also - learn your family&#39;s story, it&#39;s probably the most important bit of history you&#39;ll learn.</p>
+<p>I did get a bit of inner encouragement that the exercise I&#39;m doing with this page is probably worthwhile - it seems that most of being a good and peaceful person<sup>2</sup> comes from humility, the willingness to change, the understand that at the end of the day, we&#39;re all just kids running around pretending to be grown-ups, and probably the ability to take one&#39;s self lightly.</p>
+<p>Anyways, I want to just sit and not do any more work for the day, but I know it&#39;s my duty, and I know long term its the work that allows me to have the kind of day I&#39;m having today. So I&#39;m going to take a second to regroup myself and I&#39;ll get down to the desk for some more math.</p>
+<p><strong>5:04 PM</strong> - Alright, time to get back to work. I know I may be sloppy, I know I may loose focus, I know life may get in the way - it&#39;s just that time of day. We move ahead though, and we do our best to sail through the storm.</p>
+<p><strong>5:41 PM</strong> - Eyes are closing. Currently at 260 XP. Had to put some lock in music for the first ever since doing this, and not even that is helping. Going to just force through to 300XP total, and I&#39;ll go take a nap - that seemed to help yesterday. Then we&#39;ll do daily, dinner, and we may attempt some more lesson at night.</p>
+<p><strong>6:41 PM</strong> - Wrapped up the session - ended up being about 90-mins either way, so that four-and-half hours of studying for the day. Not what we need to be doing but something nonetheless.</p>
+<p>Those first thirty or forty minutes were genuinely terrible. Those seemed like the hardest multiplication problems ever. I do however feel pretty good now, like I could generally keep going - so that&#39;s a nice little discovery, maybe that feeling of deep tiredness fades after a while if you push through the hardest bit. Maybe in the future we&#39;ll try that, 40-60 minutes of more effort after we&#39;re tired and see if we can start pushing more.</p>
+<p>Ended crossing the 300XP after all, ended at 304 XP for the day, that&#39;s 73 XP for the session at a rate of 43 XP/hr, so the numbers speak to the slow-down once again.</p>
+<p>Anyways, about to go have dinner instead of sleeping, and hopefully that re-charges me enough to write the daily right after.</p>
+<p>I&#39;ll be back.</p>
+<p><strong>9:40 PM</strong> - I made the choice to play some games with the family after dinner. I don&#39;t regret it, but I&#39;m definitely feeling the weight of having to write the daily now.</p>
+<p>It&#39;s doable though.</p>
+<p>I did figure Friday and Saturday will be hardly work days. We&#39;ll be out most of Friday and Saturday will be travel day. I&#39;ll try my best to do an effort to advance tomorrow.</p>
+<p>Anyways, lets suffer through this so we can go to sleep.</p>
+<p><strong>10:08 PM</strong> - Yeah...that was not my greatest performance. Lesson learned.<sup>3</sup>.</p>
+<p>Going to go join the faimily for a couple more minutes and I&#39;ll be right to bed.</p>
+<p>I will see <em>you</em> in the morning.</p>
+
+<div class="footnotes">
+<p class="footnote">(1) We&#39;re also first in the bronze league by a margin of 39 XP. There are 9 leagues total and bronze is 7th from the top, so we still got a long way to go.</p>
+<p class="footnote">(2) Both with yourself and others</p>
+<p class="footnote">(3) Do not push off the daily.</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><a href="2026-4-1.html" class="post-nav-link">← Reflection</a></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
