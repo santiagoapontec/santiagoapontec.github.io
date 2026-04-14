@@ -207,7 +207,7 @@
         var today = new Date();
 
         // Days that have entries: add dates as 'YYYY-M-D'
-        var entries = ['2026-3-14', '2026-3-15', '2026-3-16', '2026-3-17', '2026-3-24', '2026-3-25', '2026-3-26', '2026-3-27', '2026-3-28', '2026-3-29', '2026-3-30', '2026-3-31', '2026-4-1'];
+        var entries = ['2026-3-14', '2026-3-15', '2026-3-16', '2026-3-17', '2026-3-24', '2026-3-25', '2026-3-26', '2026-3-27', '2026-3-28', '2026-3-29', '2026-3-30', '2026-3-31', '2026-4-1', '2026-4-2', '2026-4-3', '2026-4-4', '2026-4-5', '2026-4-9'];
 
         var months = [
             { id: 'jan', name: 'Jan', month: 0 },
@@ -254,7 +254,7 @@
             var classAttr = classes.length ? ' class="' + classes.join(' ') + '"' : '';
 
             if (hasEntry) {
-                html += '<td' + classAttr + ' onclick="window.location=\'daily-posts/' + dateKey + '.html\'"style="cursor:pointer"><span>' + day + '</span></td>';
+                html += '<td' + classAttr + ' onclick="window.location=\'daily-posts/' + dateKey + '-pbp.html\'"style="cursor:pointer"><span>' + day + '</span></td>';
             } else {
                 html += '<td' + classAttr + '>' + day + '</td>';
             }

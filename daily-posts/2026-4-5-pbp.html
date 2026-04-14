@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>April 5th — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>12:05 AM</strong> - Testing this again, not quite working yet</p>
+<p><strong>12:06 AM</strong> - Okay, seems like the test is working.</p>
+<p><strong>12:13 AM</strong> - Okay, seems like its working from launch now. The only tiny flaw is it still asks me to accept to run it, but I guess that&#39;s still a psychological thing I&#39;ll need to consciously by-pass.</p>
+<p><strong>9:31 AM</strong> - Alright. I woke up about 20-mins back. I&#39;m downstairs having breakfast, but my sister is kindly making the eggs so I came here to write.</p>
+<p>Those little entries you see before this one were tests for a new thing I built. I wanted to force myself to use the play by play&#39;s by more rigorously so I had the idea of &quot;locking&quot; my computer until I wrote an entry every time I wanted to use the computer.</p>
+<p>Claude really did the entire thing, but what happens now when I open my computer is that VS code is brought to the front, and until I don&#39;t write an entry into the daily (which I do by running the command, node log.js after writing something in markdown file) the computer is checking every second for whether the node log.js command has ran successfully, if it hasn&#39;t, any other window/app I switch to that is not VS Code will close automatically in one-second and bring me back to VS Code - essentially forcing me to write.</p>
+<p>Hopefully this makes so that one bad days/days where I open the computer and I want to avoid writing because I just feel like going straight to Youtube or, some other place, this will force me to have to confront myself and either tell you about it, or let it go in writing and actually do something good for myself.<sup>1</sup></p>
+<p>My phone is with my sister now, so that also eliminates that as an escape source.</p>
+<p>Anyways. I&#39;m going to get back to breakfast and then we will see what the rest of the day holds. I&#39;m feeling like we get out of the rut today.</p>
+<p><strong>10:36 AM</strong> - Okay, back at the desk. Did breakfast, shower and room cleaning. So all the usual business is taken care of.</p>
+<p>The thing I was just talking about before did not come up this time, I&#39;m sure it&#39;s broken - after all it was built entirely by AI with minimal understanding of mine. Anyways, lets not spend too much time worrying about that and just keep disciplined at writing. It is after all what I need to do.</p>
+<p>I don&#39;t really feel like thinking of thought today, so I don&#39;t particularly feel inclined to doing a whole breakdown of essays. I do know however that we need to get out of this rut, and I know though it sucks sometimes, Math Academy is a good way to just get down and dirty and do the thing. So I&#39;m going to do that.</p>
+<p>I&#39;m not looking forward to finishing 5th grade maths since I&#39;ll then have to jump to actual lifting and do the written reviews, but hey, work isn&#39;t always fun, and if I wanted to do the one thing and that&#39;s it then I&#39;d be an accountant at a company, so, on we go.</p>
+<p><strong>11:20 AM</strong> - It&#39;s been about 40 minutes. I&#39;m really struggling through this - I&#39;m not sure exactly why.</p>
+<p>I&#39;m going to lock the computer so it won&#39;t let me do anything until I&#39;ve either stared at the wall in front of me enough to want to get back or have read or something else, since there aren&#39;t many alternatives.</p>
+<p>I might go work out too, I don&#39;t know. Guess I&#39;ll be forced to write when I&#39;m back eitehr way.</p>
+<p><strong>12:16 PM</strong> - Alright. I&#39;m back at the computer.</p>
+<p>I ended up going down and doing 1-set of a couple exercises with the dumbbells. Nothing fancy, nor heavy, just enough repetitive work to tire out my frustration. Enough to make me not even want to answer back. I also unpacked the trip bag and then just ended up reading a quick chapter of a book using the kindle.</p>
+<p>I&#39;m going to get back to Math Academy. I know that I at least can get through one lesson. If I blow up again on myself, I&#39;ll just do the same as before - I&#39;ll lock the computer and force myself to regroup until I&#39;m ready again. If anything, that practice will make me hopefully want to shrink the time I spend in the regrouping and slowly reminding myself of how to do work.</p>
+<p>Going to get right to it.</p>
+<p><strong>2:20 PM</strong> - Alright. Wrapped up studying for now. Didn&#39;t count the time just because I wanted to allow myself the opportunity to get back in rhythm without too much hassle. For the day we&#39;ve collected 106 XP total, and we are 2nd in the bronze league (top 10 get promoted, so we&#39;re good there).</p>
+<p>Math Academy says we&#39;re about 60% of the way done with the course. So a bit more studying today, and a couple big days tomorrow and the day after should do.</p>
+<p>I did see that Math Academy also just launched a 6th grade math course (and is working on adding 7th and 8th grade maths). It seems like 6th grade is just more problems from what we&#39;ve already been doing with a few extra topics and maybe some added complexity like adding digits etc... I&#39;m not going to worry on whether we should or should not do that course just yet, but it is something we will have to decide once we wrap up the current one.</p>
+<p>I feel that after 5th grade maths we will have enough bases to jump to pre-algebra, so I may do that.</p>
+<p>Going to take a quick break. Lunch should almost be here, so I&#39;ll wait for that. I also promised my sister we&#39;d watch a movie at night, since she&#39;s studying too - so that way we both have something to look forward to at night. My plan is to do lunch, write the daily after, and then do some more maths until movie time.</p>
+<p>If I manage to do all of that while remaining at relative peace and calm this will have been a good day. Let&#39;s try at that.</p>
+<p><strong>5:10 PM</strong> - Back at the desk. Did lunch, then took the dogs out with my sister, and then went with her to get some snacks.</p>
+<p>Now it&#39;s time to get that daily written and the day will be good after then. Let&#39;s make this a good day by putting some good work in right now.</p>
+<p><strong>5:48 PM</strong> - Done with the daily. Not the work I&#39;m proudest of, but maybe over the long-run it&#39;s just compounding that matters.</p>
+<p>I definitely don&#39;t need to be writing every day without care for what I wrote the previous day, the compounding probably comes from making the essays 0.01% each day over thousands of days.</p>
+<p>Going to take it a bit easier now. Maybe go watch that movie and relax a bit and try to get into a good headpspace to keep this rut moving-out as quick as possible.</p>
+
+<div class="footnotes">
+<p class="footnote">(1) Sure, I could just lie, but I find that soul-crushes me the most. Nobody is reading this and yet I still lie so that I can not do what I&#39;m supposed to? Come on.</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><a href="2026-4-5.html" class="post-nav-link">Reflection →</a></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>

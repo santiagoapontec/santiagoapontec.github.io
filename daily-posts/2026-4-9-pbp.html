@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>April 9th — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>5:41 AM</strong> - We&#39;re back.</p>
+<p>Work up about 15 mins back. Going to go for a quick run (about 1.24 miles), super easy pace, RPE 1-2. After I&#39;m back I&#39;ll have to do a running specific strength training session.</p>
+<p>I paid for a running coach yesterday - for 4 months worth of training, so until July. So that&#39;s why.</p>
+<p>We&#39;ll back at math today too. But before that I want to make some quick changes to the website, mainly just changing the daily&#39;s to be front of page and the daily reflections the clickable option, that way there&#39;s less friction day to day, so long as I have the daily we&#39;ll generally be good.</p>
+<p>The past couple of day&#39;s were just a rut, which turned to fall. But now we get back up.</p>
+<p>I&#39;m going to get a quick bite before I head out and I&#39;ll write when I come back.</p>
+<p><strong>6:50 AM</strong> - Just came back. Run was 1.31 miles at a 13:35 pace, nothing too bad.</p>
+<p>Coach said that for my last couple of runs - which I did Tuesday at like 1:30 AM<sup>1</sup> - my HR seemed way too high, and I was only going at like 11:30/mi. So we&#39;ll see how these next few weeks of training go.</p>
+<p>Anyways, got to go do the strength training session now. In all honesty I don&#39;t feel like doing it, but I know it&#39;s these little choices that eventually compound into the big wins, and especially into the character of the man I know I want to be.</p>
+<p>So, on we go. I&#39;ll write back after I finish that.</p>
+<p><strong>9:10 AM</strong> - Alright. I&#39;m back.</p>
+<p>Strength training session done. That feels like that was very long, somewhere less than two-hours. It wasn&#39;t terribly hard, just so many sets. I&#39;ll have to figure out how to plan days a bit better, it just feels like there&#39;s not going to be enough time on the day for everything.</p>
+<p>I even got a bit worried when I started thinking about the fact I may want to get a job so I can move out again - time will really be scarce then!</p>
+<p>Anyways, we focus on today for now.</p>
+<p>Going to eat breakfast, but I&#39;m going to do Math Academy in parallel, otherwise it&#39;s just going to be at least another hour before I get to do any work.</p>
+<p>Going to get right into it.</p>
+<p>I also have to remember to do two things today. 1) Sync my watch so that the coach can see the workouts, 2) change the webpage to put the play by play&#39;s in front.</p>
+<p><strong>10:44 AM</strong> - Alright, that&#39;s a 90-min session and breakfast done - finished at exactly the same time, actually.</p>
+<p>Racked up 67XP total, so a rate of 44.6 XP/hr. We&#39;ve also climbed to 12th in the Silver league, 1st place sits at 266XP, and there are 3 days left until the league is over, so I&#39;m confident we can make it to 1st.</p>
+<p>Going to take a quick break to wash dishes, brush my teeth and so on. The plan after that is to do another 90-min session, and then take the dogs out for a walk.</p>
+<p>I&#39;ll be back in a sec.</p>
+<p><strong>11:05 AM</strong> - Okay. Sitting at the desk now, all done with the chores that were pending.</p>
+<p>I just remembered I had promised a friend of mine I&#39;d jump on a call at 2 P.M. - He&#39;s starting an investment fund at his university and wants me to help answer some questions for him and the team since I did helped manage the student fund back at my school.</p>
+<p>That changes things just a tiny bit for the afternoon, I may or may not do that while having lunch just to be efficient.</p>
+<p>Anyways, business is now just a 90-min session and taking the dogs out, we can figure next steps once we are done with the next two we got to take.</p>
+<p>I need to just worry about what is in front of me, too many things are coming up wanting to steal my headspace to think about the future.</p>
+<p><strong>11:45 AM</strong> - 40-mins done, going to take a bathroom break and then we will continue.</p>
+<p><strong>12:08 PM</strong> - Back at the desk. Going to work until 12:57, so that should give us the full 90-mins.</p>
+<p>On it.</p>
+<p><strong>12:57 PM</strong> - Alright, it&#39;s just about 12:57, we&#39;ll call that 90-mins so we can go out and come back in time for the meeting.</p>
+<p>Racked up 74 XP on the session, so a rate of 49.3 XP/hr for a total XP of 141 on the day.</p>
+<p>We&#39;re also 70% of the way through with the course, which means that if we really hammer down we should be able to be done with 5th grade math soon.</p>
+<p>Anyways, I&#39;ll go take the dogs really quick so I can be back in time for the meeting.</p>
+<p><strong>3:30 PM</strong> - Just wrapped up that 2 o&#39;clock meeting. It was interesting, kind of reminded me of what I want to be and what I want to not be. On one hand its a dream of mine that people come ask for my advice or thoughts on something - so that part is great. But in the other, I want to feel as if I&#39;m making their time worthwhile because I actually know what it is that I am talking about.</p>
+<p>There&#39;s a difference between being asked to give your thoughts on something because you&#39;ve worked at &quot;x&quot; place and thus have a name/status credential, vs being asked because at &quot;x&quot; place you actually built or worked at the thing they are asking about and excelled/figured out some worthwhile insights.</p>
+<p>I still have a long way to go to get to be the second person - but I strive to be that. It&#39;s substance over appearance.</p>
+<p>Anyways, going to go have lunch now, I&#39;m pretty hungry.</p>
+<p>I&#39;ll be back after and probably do another session of Math Academy and then I might give some time to doing the website changes I mentioned before.</p>
+
+<div class="footnotes">
+<p class="footnote">(1) Part of the fall, I guess. Or the comeback maybe</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>

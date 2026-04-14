@@ -206,19 +206,16 @@ function buildDaily() {
 
   const template = fs.readFileSync(path.join(__dirname, 'post.html'), 'utf8');
   const files = fs.readdirSync(dailyDir).filter(f => f.endsWith('.md'));
-  
-  // Separate reflections and play-by-plays
+
   const reflections = files.filter(f => !f.includes('-pbp'));
   const playByPlays = files.filter(f => f.includes('-pbp'));
-  
-  // Build a set of dates that have play-by-plays
+
   const pbpDates = new Set(playByPlays.map(f => f.replace('-pbp.md', '')));
-  // Build a set of dates that have reflections
   const reflectionDates = new Set(reflections.map(f => f.replace('.md', '')));
 
   const entries = [];
 
-  function buildPost(file, slug, content, data, nextSlug, prevSlug, nextLabel, prevLabel) {
+  function buildPost(slug, content, data, nextSlug, nextLabel, noReflection) {
     const footnotes = [];
     let footnoteIndex = 0;
     const contentWithFootnotes = content.replace(/\^\[([^\]]+)\]/g, (match, footnoteText) => {
@@ -238,15 +235,10 @@ function buildDaily() {
 
     // Build navigation HTML
     let navHtml = '';
-    if (nextSlug || prevSlug) {
-      navHtml = '<div class="post-nav">';
-      if (prevSlug) {
-        navHtml += `<a href="${prevSlug}.html" class="post-nav-link">← ${prevLabel}</a>`;
-      }
-      if (nextSlug) {
-        navHtml += `<a href="${nextSlug}.html" class="post-nav-link">${nextLabel} →</a>`;
-      }
-      navHtml += '</div>';
+    if (nextSlug) {
+      navHtml = `<div class="post-nav"><a href="${nextSlug}.html" class="post-nav-link">${nextLabel} →</a></div>`;
+    } else if (noReflection) {
+      navHtml = `<div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>`;
     }
 
     const section = sections.daily;
@@ -262,30 +254,49 @@ function buildDaily() {
     fs.writeFileSync(path.join(outputDir, slug + '.html'), postHtml);
   }
 
-  // Process all files
-  files.forEach(file => {
+  // Process play by plays first — these are the main entry points
+  playByPlays.forEach(file => {
     const raw = fs.readFileSync(path.join(dailyDir, file), 'utf8');
     const { data, content } = matter(raw);
     const slug = file.replace('.md', '');
-    const isPbp = file.includes('-pbp');
-    const dateKey = isPbp ? slug.replace('-pbp', '') : slug;
+    const dateKey = slug.replace('-pbp', '');
 
-    const hasPbp = pbpDates.has(dateKey);
     const hasReflection = reflectionDates.has(dateKey);
 
-    let nextSlug = null, prevSlug = null, nextLabel = '', prevLabel = '';
+    buildPost(
+      slug,
+      content,
+      data,
+      hasReflection ? dateKey : null,
+      'Reflection',
+      !hasReflection
+    );
 
-    if (isPbp && hasReflection) {
-      prevSlug = dateKey;
-      prevLabel = 'Reflection';
-    } else if (!isPbp && hasPbp) {
-      nextSlug = dateKey + '-pbp';
-      nextLabel = 'Play by Play';
-    }
+    // Add to calendar entries
+    const d = new Date(data.date);
+    const entryKey = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+    entries.push({ date: data.date, entryKey });
+  });
 
-    buildPost(file, slug, content, data, nextSlug, prevSlug, nextLabel, prevLabel);
+  // Process reflections — these are secondary, linked from pbp
+  reflections.forEach(file => {
+    const raw = fs.readFileSync(path.join(dailyDir, file), 'utf8');
+    const { data, content } = matter(raw);
+    const slug = file.replace('.md', '');
 
-    if (!isPbp) {
+    const hasPbp = pbpDates.has(slug);
+
+    buildPost(
+      slug,
+      content,
+      data,
+      hasPbp ? slug + '-pbp' : null,
+      '← Play by Play',
+      false
+    );
+
+    // Only add to calendar if no pbp exists for this day
+    if (!hasPbp) {
       const d = new Date(data.date);
       const entryKey = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
       entries.push({ date: data.date, entryKey });
