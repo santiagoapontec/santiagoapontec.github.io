@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>April 14th</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p>Making promises that I don&#39;t keep has become the norm rather than the exception in my life.</p>
+<p>And it&#39;s not just in the small things, it&#39;s in everything...and with anyone.</p>
+<p>It could as well be me promising myself that <em>tomorrow I will wake up early</em> and the snoozing the alarm as it is me promising people that we will find sometime to get together for a catch-up soon even though I have absolutely no intention of doing that.</p>
+<p>And I really don&#39;t like that. It means that my word is getting devalued by the minute. Every new time I make a promise and I don&#39;t keep - whether with myself, or someone else - I&#39;m further &quot;exposing&quot; myself as the guy that just says things.</p>
+<p>That&#39;s worrying to me not only because say people at church will inevitably start seeing me as the guy who politely offers catch-ups and never follows through, but because being trustworthy and having my word mean something is incredibly important in all areas of my life.</p>
+<p>When I speak to my wife<sup>1</sup> I want her to know that my words mean something. I want her to know that <em>I love you</em> isn&#39;t just three words I randomly throw around, that my promise to be with her through sickness and health, through better and through worse is really true, not just some words I repeat. I want her to know that when her husband says something, she can count on it.</p>
+<p>When I commit myself externally, like for a business venture or a volunteering opportunity, I want people who I make commitments with to know that my word counts - that I if I say I can/will do something, that it&#39;ll be done no matter what.</p>
+<p>And probably above all, when I promise things to myself, I want to be able to take me seriously because I&#39;m the type of person whose promises to himself carry weight heavier than just words.</p>
+<p>All that&#39;s important to me, and it all starts with having my word mean something.</p>
+<p>As I wrote before, I haven&#39;t been too good at having that be a thing as of lately. No matter whether it&#39;s for a project or a habit, whether it&#39;s for me, a stranger, a close friend, or even family, I&#39;m not keeping my promises - and I&#39;m also making many very liberally.</p>
+<p>There is one, however, that I&#39;ve kept. More for fear, than for anything else.</p>
+<p>It&#39;s the promise to God, and to myself, that I would not sleep with anyone else until I meet my wife.</p>
+<p>To be fully transparent, and though I&#39;m ashamed to say it, I haven&#39;t kept this promise for purely beautiful and pure reasons like the commitment to my future wife or my real want to please God. Rather, I&#39;ve kept the promise because I&#39;ve made that exact promise many (<em>many</em>) times before and I broke it as though it was nothing.</p>
+<p>What changed was that after the last time I did that, I felt a weird sense that God would not allow me to go unscathed anymore if I kept making this promise in vain<sup>2</sup>.</p>
+<p>What I felt was a deep conviction that if I broke that promise again I&#39;d leave someone pregnant.<sup>3</sup></p>
+<p>Now, I tell you this story because I need that kind of stakes with the rest of my life. In some ways, pregnancy is much more visible and tangible consequence that whatever comes from not learning math or not sticking to my training plan.</p>
+<p>In the former it only takes a girl peeing on a stick and suddenly my whole world falls apart, in the latter examples its much harder to try and deeply feel how my world is going to be rocked by actions - even though I <em>intellectually</em> know that it&#39;d be as bad of a feeling.</p>
+<p>And so what I want to do today is make another promise to God.</p>
+<p>I want to be great, I <em>think</em> I can be great. I want to get out of this never-ending loop, I <em>think</em> I can get out of this never-ending loop. I want to for the first time in my life actually feel what it&#39;s like to go through with something. I want to feel what it&#39;s like to have my words mean something. I want to feel what it&#39;s like to keep a promise.</p>
+<p>I&#39;m unable to keep promises to anyone, so I&#39;m making one to God.</p>
+<p>In some ways, I hope this isn&#39;t me trying to pull myself through my bootstraps and save myself through my own strength. I hope it&#39;s an acknowledgement that there&#39;s nothing I can hope for in this world if I can&#39;t even be right with God - and that starts with actually doing what I tell him I&#39;ll do.</p>
+<p>I know there&#39;s no man in this earth more righteous than another, none sitting on a higher pedestal - we&#39;re all sinners. That&#39;s not what I&#39;m trying to accomplish here.</p>
+<p>What I&#39;m trying to do is finally take pride in the gift of God&#39;s grace and not use it as an excuse for failing, but rather as a reason as to why I <em>need</em> to do better, why I <em>need</em> to try harder.</p>
+<p>I&#39;m not worthy of grace, nor of life. Yet I get grace, and I&#39;m alive - and that alone should be enough to make me want to try.</p>
+<p>So, Lord, here&#39;s my promise.</p>
+<p>Forty appears to be an important number in scripture. It&#39;s the amount of days and nights it rained during the flood. It&#39;s the amount of days and nights Moses spends on Mount Sinai. It&#39;s the amount of years Israel wanders through the desert because of their unbelief. And most importantly it&#39;s the amount of days Jesus spends in the wilderness, avoiding the devil&#39;s temptations.</p>
+<p>So, in a hope that the duration of this has some significance to it too, I promise to do (or not do) all of the things I say below for <em>forty-days</em></p>
+<p><strong>Training diligently</strong></p>
+<p>On May 23rd I am signed up to run a 12-hour race. Before, when I&#39;ve said I wanted to do things or become great at something I never really put in the constant boring effort needed to rise up to the occasion when it came - I just put off training and dealt with the challenge as best I could.</p>
+<p>I want to learn discipline in my pursuits. Discipline in the boring chase to get better. Discpline to learn and adapt before jumping in.</p>
+<p>The desire here is discipline and faithfulness to what I&#39;ve been given - it&#39;s wanting to be a steward of my body, my time, and my word.</p>
+<p>Here&#39;s what my promise is</p>
+<blockquote>
+<p><em>For these forty-days, I commit to following my training plan with diligence and honesty, doing what is in my power each day. When circumstances truly outside my control interfere, I will bring those to you without excuses, and will not quit but resume at the next opportunity</em></p>
+</blockquote>
+<p><strong>Discipline in studying</strong></p>
+<p>A similar thing as above comes but with studying. I say I want to learn and do things to grow and to be able to do good in the world, but I end up with shallow and surface understanding that pleases only the flesh as outward appearance. I want to stop that, and actually get to points where I&#39;m more than just words explaining concepts, a point where I&#39;m a being capable of contributing good for others and for the world with what he&#39;s learned.</p>
+<p>My promise is</p>
+<blockquote>
+<p><em>For these forty-days, I commit to devote at least three focused hours each day to learning Mathematics, as an act of stewardship of my mind and my calling. I offer this time to you, asking you use it to grow perseverance, humility, and confidence in me</em></p>
+</blockquote>
+<p>The target is to just do the thing, not to feel brilliant or never get stuck.</p>
+<p><strong>Sexual self-control</strong></p>
+<p>This one is self-explanatory. I don&#39;t want to sin - not against daughters of the Lord, not against my future wife, not against myself.</p>
+<p>I want to free myself from the slavery of desire. I want to be the master and not the servant to my thoughts. I want to control and channel my impulses, and not let them guide me. And above all I want to become the type of man deserving of a daughter of the Lord.</p>
+<p>My promise is</p>
+<blockquote>
+<p><em>For these forty-days, I commit not to engage in sexual activity of any kind - physical intimacy, flirting that stirs desire, pornography, or masturbation. I know I cannot control what thoughts first appear, but I commit not to feed them or act on them. When I&#39;m tempted, I will turn to you in prayer and, when needed, bring it to light with trusted people.</em></p>
+</blockquote>
+<p><strong>Honoring my parents</strong></p>
+<p>This is just something I know I need to do, and don&#39;t. I don&#39;t have the greatest relationship with my parents, and I know it&#39;s not all their fault, but still I let myself keep contributing.</p>
+<p>I want to change that - and though I may not change the relationship, I want to learn grace, I want to learn forgiveness, and I want to learn to think about others before I think about myself.</p>
+<p>My promise is</p>
+<blockquote>
+<p><em>For these forty-days, I commit to seek peace with my parents: to avoid petty arguments, to hold my tongue instead of reacting, to listen before I speak, and to look for ways to honor and help them. When I fail, I will confess it to you and to them, and try to repair quickly.</em></p>
+</blockquote>
+<p><strong>Discipline of worship</strong></p>
+<p>The promise is two-fold here - for my public and for my private relationships with the Lord.</p>
+<p>My promises are</p>
+<blockquote>
+<p><em>For these forty-days, I commit to worship with your people every Sunday, unless prevented by serious illness or circumstances beyond my control. I receive this as training in faithfulness, not a checkbox.</em></p>
+</blockquote>
+<p>And</p>
+<blockquote>
+<p><em>For these forty-days, I commit to kneel before you in prayer at the beginning and end of each day, speaking honestly with you - praise, confession, requests, gratitude. When I&#39;m speechless or distracted, I will still show up.</em></p>
+</blockquote>
+<p><strong>Discipline of the promise</strong></p>
+<p>This last one is meant to wrap them all together, and to make sure my commitment to the Lord is above all. It&#39;s a promise to keep this promise above all - to not get distracted by whatever comes new.</p>
+<blockquote>
+<p><em>For these forty-days, I commit not to take on new significant projects or promises, so that I may be faithful to what I have already placed before you here.</em></p>
+</blockquote>
+<p><strong>And so we conclude</strong></p>
+<p>Lord, I ask not that you judge or punish me - even though you have full right to. I ask, Lord, that you <em>convict, discipline and expose me</em>.</p>
+<p>Don&#39;t let me become numb to failure; let it sting in ways that brings me to repentance. As a Father, discipline me in whatever way brings me back to you when I wander. Don&#39;t let me hide. Bring my failures into the light where they can be healed.</p>
+<p>With that Lord, I pray to you</p>
+<blockquote>
+<p>Lord, You know that I have not been faithful to my promises - to others or to myself. I don&#39;t want to use your grace as an excuse anymore. I want to receive your grace as a reason to live differently.</p>
+<p>In scripture, forty-days is a time of testing, discipline, and preparation. So I offer you these forty-days as a season of training under your grace. I cannot do this in my own strength. If I try to, I will fail. So I ask you; strengthen me by your Spirit. When I stumble, convict me quickly. Discipline me as a Father, and don&#39;t let me hide or grow hard.</p>
+<p>Let me remember to be disciplined in my training, in my studying, in my sexuality, in my relationship to my parents, and above all, in my relationship with you.</p>
+<p>Let me not put my hope in my performance in these forty-days. Let me acknowledge that I am a sinner, and that I will fail, and so let me understand that my only hope is your son Jesus Christ, who has already obeyed perfectly for me. I ask that you use these days to teach me obedience, self-control, humility, and love.</p>
+<p>Take my small, imperfect effort and make it something that pleases you, for Jesus&#39;s sake. Amen.</p>
+</blockquote>
+<p>Now, to end with words of biblical weight and significance, lets end wit these</p>
+<blockquote>
+<p>Therefore, I urge you, brothers and sisters, in view of God’s mercy, to offer your bodies as a living sacrifice, holy and pleasing to God—this is your true and proper worship. Do not conform to the pattern of this world, but be transformed by the renewing of your mind. Then you will be able to test and approve what God’s will is—his good, pleasing and perfect will.</p>
+<p>Romans 12:1-2</p>
+</blockquote>
+<p>Promise starts at 12:00 AM on April 15th, 2026 and ends at 12:00 AM on May 25th, 2026</p>
+<pre><code>- Santi
+</code></pre>
+
+<div class="footnotes">
+<p class="footnote">(1) In the future, that is</p>
+<p class="footnote">(2) Shamefully, I did even sometimes use it <em>to</em> get laid.</p>
+<p class="footnote">(3) This is probably the first time I&#39;ve truly feared to test God, I really do not want to find out. Of course I&#39;m no saint, I&#39;ve gotten to points where I&#39;ve done <em>everything but</em>. But hey, I guess in some twisted way that&#39;s still keeping the promise.</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><a href="2026-4-14-pbp.html" class="post-nav-link">← Play by Play →</a></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>

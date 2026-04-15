@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>April 14th — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>10:00 AM</strong> - Okay, I&#39;m back again.</p>
+<p>I&#39;ve honestly been dropping the ball over the past few weeks. Not writing, not studying, not praying, not going to church, etc...</p>
+<p>It took me long but I&#39;ve finally changed the daily structure so that play by play&#39;s show up regardless of whether there is a reflection or not. What had happened was that some days I&#39;d write play by play&#39;s but would not write reflections and so the the former would not be visible on the webpage and thus it essentially had no purpose.</p>
+<p>Now that I&#39;ve switched them I hope I&#39;ll be more constant in my use of the website - regardless of if I feel inspired to write, study, or train on any given day I can always just write an entry on the PBP about what I&#39;m doing to at least throw some chips in the middle.</p>
+<p>Anyways, at the moment I&#39;m sat at a cafe at some university in the city - I had to bring my sister and her friend for a school event where they get to see different uni&#39;s and such, so I&#39;m trying to take advantage of the time to at least get some stuff done.</p>
+<p>I believe I&#39;ll be here until about 12 or so when they come out. My plan is to write a reflection while I do that, so that after they leave we can just have lunch and head back home. I do need to run today still - 7K - so I need to make sure I do that when I get home.</p>
+<p>Going to get to writing, or at least force myself to do nothing else but stare at the blank markdown file.</p>
+<p>Though I&#39;m tempted to, I will hold myself from getting distracted by the swarms of beautiful college girls which surround me.</p>
+<p><strong>12:16 PM</strong> - Alright, that&#39;s all done - reflection, and new short-term life focus written.</p>
+<p>Sister finished too, she went to have lunch with her friends. I desperately need to find a restroom so I&#39;ll go do that, and then see if there&#39;s any lunch.</p>
+<p>Then its really just getting together with them again and going home. I&#39;ll write before I do that.</p>
+<p><strong>9:43 PM</strong> - Back at the computer, finally.</p>
+<p>I ended up grabbing lunch just outside the university. It started pouring rain so I just waited there until the sky cleared up a bit so my sister and her friend could come.</p>
+<p>We left for home at about 2 PM and ended up getting there at about 4:30 PM, city traffic sucks.</p>
+<p>Anyways, as soon as I got home I laid in bed, wanting to take a quick rest before running. That turned out to be not so quick...and I was still in bed at 7 PM. I did however drag myself out at 7:30 and went for that run the tarining plan had scheduled for today.</p>
+<p>Let this be a reminder to just get training out of the way first thing in the morning, doing in the afternoon, especially after being out of the house has 10x the friction.</p>
+<p>I&#39;m now about to head to bed, I had dinner just after I came back from the run, at about 8:30.</p>
+<p>Promise starts tomorrow - going to attempt a 5 am wake up.</p>
+<p>In terms of to-do&#39;s, training tomorrow is a 2k run and a strengthening session right after. I&#39;ll also have to remember to pray first thing in the morning.</p>
+<p>See you tomorrow, lads.</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><a href="2026-4-14.html" class="post-nav-link">Reflection →</a></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
