@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>4/15 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>5:20 AM</strong> - Already up. The alarm went off at 4:55 AM, and I got out of bed about 5 minutes later.</p>
+<p>I had a drink in my bedside, which is unusual, but it was very good as I often wake up thirsty - it was an easy thing to do to get me up. Just grabbing a drink, that is.</p>
+<p>I also went to the restroom and washed my face with a bit of water, that also helped.</p>
+<p>I&#39;ll have to keep figuring out tiny ways to make the mornings easy to deal with. I&#39;m fragile and its way too tempting to just switch sides and go back to sleep.</p>
+<p>I did also pray on my knees after I did all that, that was good too, although it was certainly hard to say things this early in the morning - I suspect doing this will also be a big part of getting me to want to get up and seize the day.</p>
+<p>Funny enough, praying at night usually puts me at ease to go to sleep, even when I don&#39;t feel all that tired.</p>
+<p>As a note to myself, to make things easy, I&#39;ll try to recap at end of day my progress in keeping the promise. For now, we&#39;ve prayed on our knees in the morning.</p>
+<p>What is in front of us now is training. I&#39;m not super excited for it, to be completely honest. The strengthening sessions aren&#39;t my favorite, they take too long. But hey, it&#39;s what the trainer says we have to do, so we listen and we just do the things.</p>
+<p>Going to get myself ready to go for the quick warm up run (2k). I&#39;ll write an entry before heading out for that.</p>
+<p><strong>5:40 AM</strong> - About to leave</p>
+<p><strong>6:22 AM</strong> - Just got back from the run - good shakeout.</p>
+<p>Going to do the strengthening session now. Don&#39;t feel opposed to doing it, but I just know halfway through I&#39;ll want to quit. I&#39;ll just have to remember that and push through, it&#39;s just what we have to do.</p>
+<p>I&#39;ll do that and then we will figure out what the rest of the morning looks like.</p>
+<p><strong>8:29 AM</strong> - Alright, strengthening session all done! That&#39;s all training done for today.</p>
+<p>I indeed wanted to just drop it halfway, it did take me about an hour and forty-five, which feels really long. But hey, we managed, and it&#39;s only 8:30 AM, I call that a win.</p>
+<p>Going to do breakfast now. I&#39;ve already tidied up the room, so after breakfast we&#39;ll jump straight into some Math Academy sessions before lunch.</p>
+<p><strong>9:04 AM</strong> - Halfway through breakfast.</p>
+<p>I bought a ticket to another race, another 50 miler (in July) but this time it&#39;s a trail run through a canyon. I did that for two reasons. First, I&#39;ve already paid the running coach for training until July, so it makes sense to book the race. Two, I&#39;m not great at managing my money, so spending in things that are worthwhile even if far away is a better idea than having my money lie around and leaving to chance the possibility of me spending it on stupid and useless things.</p>
+<p>On the topic of money, as you know, I have no job, which means no income...I have around $5 million saved up in my local currency<sup>1</sup> (post race purchase), so I have to be diligent in how I spend that cash. I&#39;ll try to write about any spending I plan to do here just to keep track and think through money decisions before I make them.</p>
+<p>Going to go finish breakfast now.</p>
+<p><strong>9:41 AM</strong> - Okay, sat at the desk now. Going to start with Math Academy - I&#39;m shooting for a 90-min session but some guy is coming to the house to fix some stuff so I may need to go down and help since my mom just had surgery.</p>
+<p>I&#39;ll just start working and try to do as much as I can, and if I happen to need to go down I will and then I&#39;ll continue.</p>
+<p>I know post-lunch the day should be fairly free aside from taking the dogs out, so hopefully we can dedicate sometime to studying then too.</p>
+<p>But let&#39;s start cranking because we need at a minimum three hours.</p>
+<p>On we go.</p>
+<p><strong>9:54 AM</strong> - Just got called to go down and help. Manage to finish one lesson, let&#39;s call it 10 mins done.</p>
+<p><strong>10:09 AM</strong> - Alright, back again. That was fairly quick and much more efficient than an argument! Back to studying.</p>
+<p><strong>11:46 AM</strong> - Alright, I&#39;ve been called again because me and my sister need to go out and buy lunch. So I need to go shower so we can head out.</p>
+<p>We&#39;ll call a 90-min session (10:10 to 11:40), so we&#39;ve racked up 110 minutes of studying total today - almost at the two-hour mark. So far we have 120XP (a rate of 65 XP/hr, pretty good!) and we&#39;ve climbed to 3rd place overall in the Gold League, 161 XP behind first place.</p>
+<p>Math Academy also says we&#39;ve completed about 75% of 5th grade math, so we&#39;re getting close to needing to do that written review, which I&#39;m actually excited for.</p>
+<p>Anyways, about to go shower and then leave, I&#39;ll write when I&#39;m back.</p>
+<p><strong>1:42 PM</strong> - Just made it back home. Going to go eat lunch and I&#39;ll be back.</p>
+<p><strong>2:15 PM</strong> - All done with lunch. Just remembered the Champions league is on...going to take a break while I watch the match. I will work a couple more hours at Math Academy before the day is over, take that as a promise.</p>
+<p><strong>4:31 PM</strong> - What a match. Back at the desk now. Ended up going and taking the dogs out with my sister too while it was going on, so it was a good overlap to save some time.</p>
+<p>Now...I may be taking my sister to her friends so she can have a sleepover, I know its more time I don&#39;t do work, but it is something I&#39;m okay with doing because I know what its like to be that age and have to let down your friends because your parents won&#39;t approve of you going out.</p>
+<p>I&#39;ll get to studying while I wait to see if that happens.</p>
+<p>I&#39;ll get cranking.</p>
+<p><strong>5:18 PM</strong> - Just finished a session, we&#39;ll call that 40 mins of studying.</p>
+<p>We did 46 XP on the session, so we&#39;re at 166 XP total for the day, so that&#39;s two hours and 30 minutes we&#39;ve studied (the 110 from before and 40 more).</p>
+<p>Going to go drop off my sister and then I&#39;ll be back and work a bit more at it.</p>
+<p><strong>6:48 PM</strong> - Alright, dropped her off and I&#39;m back.</p>
+<p>Going to settle down to get at least to the three-hour mark so we can fulfill the promise, but I&#39;ll try to get some extra as well.</p>
+<p>Going to get right to it.</p>
+<p><strong>7:57 PM</strong> - Okay, going to wrap up it up here for now. I&#39;m making silly mistakes and also just mechanically doing things without any conceptual understanding (of which I usually get at least a bit of).</p>
+<p>Going to grab a bite to eat and then head to bed.</p>
+<p>My goal is to wake up at around 4 or 5 AM tomorrow - I have to run 7K as training, and I&#39;ll have to leave for the city at about 10 AM for a lunch meet at 12.</p>
+<p>My idea is to have at least two hours or so of studying done (plus training) before I&#39;m headed to the city, that way when I&#39;m back its much easier to tackle the day. My rough plan is say, wake up at 4, do 40 minutes or so of math, then go run at 5, come home at 6, and do math roughly from that time until 10 AM.</p>
+<p>Going to go get some dinner and try to head to bed early so I can make that happen.</p>
+<p>I&#39;ll write another entry before I pray and go to bed, when I do that, that&#39;s our promise kept for day 1; 3 hours of studying, training as scheduled, start and end of day prayers, and also discipline in self-control, family relationships, and discipline of the promise itself.</p>
+<p>As for end of day Math Academy numbers, we did three and a half hours of studying total and gained 233 XP. In terms of the last session we racked up 67 XP for an hour of work. We also now sit second in the Golden league, only 66 XP short of first.</p>
+<p><strong>8:45 PM</strong> - Alright, back once again.</p>
+<p>I&#39;m pretty exhausted, so I&#39;m just going to write this, pray, and try to go to bed.</p>
+<p>In terms of day 1/40 for the promise, we;</p>
+<p>Trained as per scheduled (check)
+Studied math a minimum of three hours (check)
+Prayed at start of day (check)
+Prayed at end of day (about to)
+Maintained our thoughts under control (Approved)
+Honored our parents (Approved)
+Added no major commitments (check)</p>
+<p>There&#39;s definitely improvements we can make day by day, but today was still a good day, no matter how little, it added something. It was a step in the right direction.</p>
+<p>Going to pray and then head to bed, I will report back tomorrow.</p>
+
+<div class="footnotes">
+<p class="footnote">(1) About $1,400 bucks</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
