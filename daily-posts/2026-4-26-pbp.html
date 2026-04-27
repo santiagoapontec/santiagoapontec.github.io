@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>4/26 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>11:53 AM</strong> - Okay, it&#39;s time to get back and get to work again.</p>
+<p>I know there&#39;s a massive gap and I&#39;m not really explaining why - I might try to in an essay later today or this week. It&#39;s mostly just been me in a stale state not doing much more than watching Youtube shorts for hours (and I mean hours) on end...plus one or two days of complete fuck-ups where I spent the equivalent of a month&#39;s minimum wage in a hooker and where I also did drugs for the first time, with the hooker...yeah, I know, I need to expand on that a bit more.</p>
+<p>Anyways. We&#39;ve got about a week until I&#39;m off to the states. I currently have about 3 Million in local currency, which isn&#39;t a lot, but it&#39;s enough. That&#39;s no more than like $750 bucks, so I&#39;m afraid a lot of that will go towards my two weeks in the states.</p>
+<p>I won&#39;t worry too much about that now, I&#39;ll just try to spend as little as I can from here until the trip and see how much money I come back with after. For now, my running coach is paid until July (that&#39;s important because one of my goals is to consistently go at running until end of year) so we have a bit of buffer time to figure out how to get some more money before my current period is up.</p>
+<p>In terms of the main goal we&#39;ve been pursuing, I&#39;m 96% of the way done with 5th Grade math in Math Academy.</p>
+<p>It&#39;s about 12 PM here, and I&#39;m currently 21st in the platinum league (which ends in 7 hours), below 21st and I get relegated, and over 10th and I get promoted. I&#39;m also yet to do my training for today which is just a long run, 1:30 hrs, 8 mins running 2 walking for 9 splits.</p>
+<p>My idea is to grind Math Academy for as many hours as I can before the league is over, and then just go run at night. Ideally starting the run no later than like 7 PM.</p>
+<p>So, let&#39;s get cranking and get back to it. For the millionth time...</p>
+<p><strong>1:07 PM</strong> - Alright, it&#39;s been about an hour. Going to stop and take a quick shower both because it&#39;s 1 PM and I haven&#39;t showered and also because I&#39;m starting to get a bit distracted just sitting and studying.</p>
+<p>Managed to get 76 XP on the session, which bumped us up 9th place in the league with 114 XP. 1st place has 818 XP, so we&#39;re not getting there....but I&#39;m hoping we can catch at least 4th place which now has just over 250 XP.</p>
+<p>Also, my sister who is in 10th grade is working on a Math&#39;s project doing Calculus...Definitely a fun contrast knowing I&#39;m still in elementary school math. But hey, we keep going. There&#39;s no other way.</p>
+<p>Is getting through all of Math Academy an achievement in itself? Even if it gets me nowhere? I don&#39;t know.</p>
+<p>Anyways, going to get in the shower and then I&#39;ll get back to it.</p>
+<p><strong>1:53 PM</strong> - Back the desk.</p>
+<p>Not feeling super motivated or incredibly sharp, but I know I need to do work. I don&#39;t want to run too late, so we&#39;ve got to put our heads down and just do some work.</p>
+<p>Going to get right to it.</p>
+<p><strong>2:37 PM</strong> - Alright, 30-mins into the session and we&#39;ve completed 5th grade maths!</p>
+<p>We&#39;re officially in middle school haha!</p>
+<p>Racked up another 39 XP, for 115 total on the day. We&#39;re also sitting in 5th place in the Platinum league with 153 XP, about 100 XP behind 4th place.</p>
+<p>I did say that I&#39;d do a full review of 4th and 5th grade math once I was done. I think that&#39;s a good idea, even though I&#39;m not terribly excited for it.</p>
+<p>There&#39;s tons of processes I&#39;ve learned but it&#39;d be good to solidify them in my mind. Just generally being able to know rules off the top of my head instead of having to do a quick google search after I haven&#39;t done them for a while, being able to connect concepts more broadly (say understanding the progression of concepts, instead of just knowing I can do x different processes).</p>
+<p>My idea is to simply go through the lessons Math Academy has - which are essentially the exact same as the ones presented to me when I was learning, except I&#39;ll go through them in an order in which I think would make learning sequential. I&#39;ll basically transcribe their lessons in my own words on the website, until I feel confident I could explain all the concepts of 4th and 5th grade math to someone and also be able to make sense of why I am teaching them in the way and sequence in which I am teaching them.</p>
+<p>I know there will be some start-up friction in doing this. After all it&#39;ll be my first real learning journal, so I want to make sure its thorough and that it also looks good.</p>
+<p>I know already that I may start with some structure and then need to switch. That&#39;s okay. We know - from previous experience - that the best and fastest way to figure out the optimal structure is just starting somewhere and not being afraid to re-evaluate down the road.</p>
+<p>I&#39;m going to start taking a quick look at the lessons in Math Academy and see how we can structure the learning journal.</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
