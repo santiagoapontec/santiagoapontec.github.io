@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>4/27 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>5:02 AM</strong> - I&#39;m up, as promised.</p>
+<p>Ended up sleeping about 5 hours and 38 minutes according to my watch, so I was right in that it takes me a sec to go actually go to sleep.</p>
+<p>After shutting down the computer I ended up watching a - 15 minute - video on the thing called Tribe V2. It&#39;s a model Meta just released that simulates human brian responses to stimuli, and it&#39;s based on actual human brain reactions. Pretty cool stuff. That reminded me that&#39;s the sort of stuff I want to be able to do/play around with at a high level someday.</p>
+<p>I also read for about 10 mins, same book, the one on King David.</p>
+<p>Ah, also right before bed my Math Academy subscription expired...so I&#39;ll have to get out $50 bucks to make it active again. It&#39;s a big hit to the finances to be honest, but I can&#39;t really complain, after all I have spent a good chunk of money on things I shouldn&#39;t have. Maybe it&#39;s just a reminder to be urgent with things, after all I am &quot;wasting money&quot; by not using it (which also leads me to think maybe I do a hybrid between writing the reviews and starting in pre-algebra...but we&#39;ll see.)</p>
+<p>Anyways, first task of the day is to get the Math Academy account active again. And in general terms, the rest of the day should be enough to accomplish buying a new sim card, and auditioning for some sales roles.</p>
+<p>Let&#39;s go get it.</p>
+<p><strong>5:17 AM</strong> - Alright, that&#39;s done. We&#39;re back in.</p>
+<p>There&#39;s some good news too, we were promoted and we&#39;re in the sapphire league now, which is the 4th highest. It&#39;s six days until promotion/relegation day, so in theory we could be in the 3rd highest league by the time we go to the states, which Math Academy says puts us in the top 22% of users.</p>
+<p>Anyways, I&#39;ll get working on the learning journal.</p>
+<p>I&#39;ll try and not think about too much on whether it looks right as I imagine it will, because it won&#39;t...and I don&#39;t even really know how it is that I wanted to look. I&#39;ll just get words on paper in a way that makes sense and we&#39;ll go from there.</p>
+<p><strong>6:31 AM</strong> - I&#39;m definitely making some progress, there are words on the screen. I&#39;m having a bit of trouble thinking on whether these are notes to myself or to the world though...if they&#39;re for the world they&#39;re just not that great, I think they&#39;d confuse a toddler, and if they are for me, they could be a bit more compact I think.</p>
+<p>My hunch is that the notes should probably be for me...at least for now. Just looking at what I&#39;ve written it just ends up being weird in the sense that it tries to be elemental in its explanations so that the theoretical person trying to learn this actually could if they&#39;d never gone through the topic before, but it fails because I end up introducing more complex topics to make sense of the elemental topics. Like say, multiplication for place values.</p>
+<p>Perhaps it&#39;d be cleaner if I just write these as notes to myself, making sure I know I understand the concepts rather than trying to make sure a person who&#39;s never seen this before could understand them.</p>
+<p>I&#39;m also fighting the feeling that I just generally dislike the aesthetic of the journals. Ihe page design looks pretty good to me when it&#39;s an essay, but since learning journals constantly break off to have white space / introduce new ideas, the page ends up not looking great in my opinion.</p>
+<p>I know that&#39;s a tangent though, and it doesn&#39;t really help the cause of learning any more than just leaving as it is for now. I guess writing it down just helps take the urge to change it out of me.</p>
+<p>I think I&#39;m going to go ahead and edit the journal and make it more of a note to me than a teaching guide for others.</p>
+<p><strong>6:40 AM</strong> - I&#39;m going to go have some breakfast now. I&#39;m so hungry.</p>
+<p>I&#39;ll be back afterwards, tidy up the room a bit, and then we&#39;ll get on with editing.</p>
+<p><strong>8:58 AM</strong> - Alright, back at the desk.</p>
+<p>I ended up watching a full episode of the Grand Tour<sup>1</sup> whilst I had breakfast. I used some dodgy logic, but I convinced myself with the &quot;Does it do more damage to just watch the show while I eat and then pause it vs having to fight through stoicly eating food every day?&quot;</p>
+<p>I also tidied up the room, washed the dishes and took the dogs out quickly.</p>
+<p>Anyways, time to get back to work.</p>
+<p>I may have to go pick up my sister just past 1 PM, but that&#39;s not a sure thing yet. My idea is to work on the math journal from here until 12 PM and then re-evaluate what the day looks like from there.</p>
+<p>On we go.</p>
+<p><strong>11:49 AM</strong> - Okay, most of the place value journal is done.</p>
+<p>I did end up re-writing most of it. It&#39;s okay, I don&#39;t love it or hate it.</p>
+<p>One thing I realized is that if these are notes to myself I don&#39;t need to transcribe <em>all</em> of what I learned in math academy, like how to turn numbers into words for example. Just the big general concepts I think are interconnected and are important for math literacy.</p>
+<p>For instance, the one I&#39;m missing in place value is the concept of carrying.</p>
+<p>So that&#39;s probably the approach I&#39;ll try to take from here on. Just doing journals on concepts I know I should have settled in my mind and concepts which very concretely tie to understanding other topics.</p>
+
+<div class="footnotes">
+<p class="footnote">(1) Top Gear&#39;s latest show, on Amazon</p>
+</div>
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
