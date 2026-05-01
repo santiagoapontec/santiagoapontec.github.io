@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>4/28 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>4:50 AM</strong> - Couldn&#39;t really sleep. Watch says at best I got 4.5 hrs.</p>
+<p>Going to skip the game (might watch while studying). Going to go back to bed and see if I can squeeze two more hours of sleep.</p>
+<p><strong>10:04 AM</strong> - Well, that wasn&#39;t really 2 hours...</p>
+<p>It&#39;s 10 am and I&#39;ve just now gotten out of bed. And I&#39;m not really sure why. It&#39;s one of those days when getting out of bed feels like the championship final.</p>
+<p>I know its no good, but there&#39;s also no point in ruining the rest of the day because I think I&#39;m an idiot and deserve nothing.</p>
+<p>Just sat down for breakfast, going to get right into Math Academy too and hopefully work for a good bit before taking the dogs out, and then we&#39;ll try to get the run and workout done before lunch.</p>
+<p><strong>11:28 AM</strong> - Been working since I said I would. We&#39;ve racked up 88 XP on the day and are 11% through of the way with pre-algebra.</p>
+<p>I&#39;m writing this because Math Academy is now asking me to take a supplemental diagnostics exam for pre-algebra. I&#39;m guessing they want to re-asses whether maybe they should skip some material. I really rather them not skip anything, but I also don&#39;t want to just completely bomb the exam so that happens, because only God knows where they may send me.</p>
+<p>I might just take the exam without any outside help at all - like I said before for some quizzes for maybe a question or two I&#39;ll look online at how you do something just to verify that I&#39;m doing it correctly.</p>
+<p>I&#39;m going to take a quick stop, go make my bed, and then sit at the desk and take the exam. We&#39;ll see what happens after that.</p>
+<p><strong>11:49 AM</strong> - Alright, time to see what this is all about...</p>
+<p><strong>11:55 AM</strong> - Well that was fast, it was only three questions. Two for stats and one for Geometry. I didn&#39;t know the Geometry question so I skipped it, and I got one right (determining data outliers) and one wrong in stats (box plots).</p>
+<p>It says I&#39;m now 19% of the way done with the course, and it shaded a lot more of the stats section, so I guess the outlier question might&#39;ve been a good chunk of the material, who knows.</p>
+<p>Back to the grin anyways.</p>
+<p><strong>12:54 PM</strong> - Was going to take the dogs out right about now but it started pouring rain, so that&#39;s a no-go now.</p>
+<p>Ended up getting another 73 XP for a total of 161 XP today. We&#39;ve also climbed all the way to 1st in the Sapphire league.</p>
+<p>Math Academy says we&#39;re about 22% of the way through with pre-algebra, we&#39;ll have to see how that moves over the next few days with the amount of XP we&#39;re collecting. Their data says we&#39;ll finish in about mid-august at current pace but its saying I&#39;m only doing about 30 XP a day which seems off.</p>
+<p>Anyways, going to take a quick break, take a shower, and then we will see what&#39;s happening for the rest of the day. It may either be lunch right after shower, maybe some more time to work, or perhaps I will give myself the chance to see the match since we&#39;ve put in some good work regardless of the mess-up this morning.</p>
+<p><strong>1:57 PM</strong> - Alright, that worked out kind of perfect. It stopped raining right about 1:10, so instead of showering and having lunch I took the dogs out for about 50 mins. Just got back.</p>
+<p>Its perfect because now I&#39;m going to go have lunch and I can watch the match simultaneously.</p>
+<p>Going to go do that and hopefully by the end of it I&#39;ll have had enough time post lunch so that I can head out for that warm up run.</p>
+<p><strong>4:22 PM</strong> - What a macth that was, absolutely bonkers.</p>
+<p>Going to go out for that run now. Quick 4k before the workout.</p>
+<p>I&#39;ll be back!</p>
+<p><strong>6:43 PM</strong> - Okay, that&#39;s the strengthening session done as well.</p>
+<p>It wasn&#39;t too bad today, played some music while I did it so that probably helped.</p>
+<p>Just a run for training tomorrow, which is good, I know psychologically I can knock that out much easily.</p>
+<p>Anyways, going to take a quick break, dinner might be served fairly soon. I&#39;m also thinking that if I&#39;m not bed tired by like 9 PM I&#39;ll probably just stay up until 12 or so and just wake up at 7 tomorrow. That way I can pack some work in instead of just hoping to fall asleep.</p>
+<p><strong>8:40 PM</strong> - Alright, back at the desk. Going to get to Math Academy and see when I&#39;m about ready for bed.</p>
+<p><strong>9:16 PM</strong> - Alright, going to end it right about there.</p>
+<p>Getting a bit harder to focus on the words on the screen, plus a quiz just popped up, so I&#39;d rather do it with a fresh set of eyes.</p>
+<p>Going to stop for the night and hopefully be asleep no later than 10 PM so that we can have an early start tomorrow!</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>

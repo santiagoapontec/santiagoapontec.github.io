@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>4/29 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>9:27 AM</strong> - Just got out of bed.</p>
+<p>It isn&#39;t the early start I wish we&#39;d had, but I guess it&#39;s 30 minutes earlier that yesterday, which maybe we can call progress...</p>
+<p>Anyways, just got down to the breakfast table to, so I&#39;m going to eat whilst I do some Math Academy too. Today&#39;s plan probably looks a lot like yesterday&#39;s.</p>
+<p><strong>10:29 AM</strong> - Finished breakfast about 30 mins ago and I&#39;ve still been working since.</p>
+<p>Going to take a quick pause to tidy up the room a bit and go to the bathroom and I&#39;ll get back to it.</p>
+<p>We have 43 XP on the day so far, and Math Academy says we&#39;re 26% of the way through with pre-algebra. We&#39;re also still top of the sapphire league.</p>
+<p><strong>11:22 AM</strong> - Coming back to it.</p>
+<p>In full honesty, I spent some time watching a Youtube video and I got caught in an offer - some guy who created a company where you can clip content from creators, post it on social media, and get paid for views.</p>
+<p>A part of me thought I could do it and have that be part of my income. I thought I could use the Tribe-V2 model, create an engine which analyzes the creators videos entirely and thus tells me what parts are more likely to go viral, and simply have another model clip them and post them.</p>
+<p>I thought I&#39;d tell a friend of mine about the idea and ask if he wanted to do it with me.</p>
+<p>I don&#39;t really know. I guess a part of me thinks if that&#39;s really what I want to be doing, but part of that is probably just the fact that I&#39;m scared of it not working out. And the other part of me thinks that this may just be a distraction form what I am supposed to be doing, and that I am in fact working so that call it by the end of this year I&#39;ll have the ability to whip out a project like that.</p>
+<p><strong>11:34 AM</strong> - Maybe what I&#39;ll do is say that for every hour I spend doing Math Academy I&#39;ll be able to spend one hour playing around with claude and seeing how far I can get into creating a short-form content analyzer with Tribe V2.</p>
+<p>Sounds like a decent trade-off.</p>
+<p>No telling anyone, no doing any big projects out of it. Just doing work and then playing around and seeing what comes of it. No expectations, just experimentation.</p>
+<p>Going to put my head down and do an hour more of Math Academy, if it&#39;s not raining by the end of it I might go take the dogs out so that like yesterday I can watch the champions league match while I have lunch.</p>
+<p>Getting to it now.</p>
+<p><strong>12:34 PM</strong> - Alright, that&#39;s about an hour.</p>
+<p>We&#39;re sitting at 144 XP total for the day, with a course completion of 31%.</p>
+<p>Going to chnage my clothes and take the dogs out, I&#39;ll be back.</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
