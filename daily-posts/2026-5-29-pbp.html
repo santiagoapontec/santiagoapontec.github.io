@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>5/29 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>10:29 AM</strong> - Alright, it&#39;s a new day.</p>
+<p>Woke up at ~9:15am, had breakfast and all. Sitting at the desk now fairly motivated. Going to get right to Claude and see what we have for the next few hours.</p>
+<p><strong>12:31 PM</strong> - We&#39;re making some great progress and I&#39;m learning some really cool stuff, but I fear its getting eerily close to the point where I&#39;ll start making changes without understanding what is going on fully because of the fact that we&#39;re getting good results.</p>
+<p>I&#39;m going to take a break, and maybe what I will do (which I really don&#39;t want to) is to take a step back and write a decomposition paper of everything we&#39;ve done so far to see 1) if I really do understand it and 2) take some complexity out of continuing forward because I understand how far we have gotten.</p>
+<p>Going to take a quick break, maybe eat something (I&#39;m so hungry the past few days, even after I eat), and probably shower.</p>
+<p><strong>2:47 PM</strong> - Alright, I&#39;m back, time to get in the flow of things again.</p>
+<p><strong>3:44 PM</strong> - I just did something with Claude and thought it may be a pretty useful thing to do as a project sometime. Going to write it down here.</p>
+<p>I&#39;ve been working inside a project folder in Claude. I did so that hopefully I could have multiple chats with Claude regarding different aspects of the project but that it would have all the context everytime so that every conversation felt like the same conversation. Meaning that if I spoke to chat #3 of the project I could speak exactly the same way I did to chat #1 and would not have to explain things.</p>
+<p>Now, I have one massive chat (apparently its ~5,200 lines of context now) and I just now started a new chat within the project to see if that new window could be where I had Claude help with the more of the conceptual process of understanding to be able to write a notes document. But as soon as I asked Claude if it knew where we were, it said it has no memory and no context (even though that&#39;s on in settings). What I did then was simply go to my massive principal chat and literally just copy the entire chat history from front to back, then feed it to the new Claude (as the paste doc it makes when you paste very lengthy things) and boom, it appears to have what seems to me like perfect context.</p>
+<p>Now, I assume there&#39;s probably some things that could be done to help the chats have even better context, perhaps I don&#39;t know, breaking it into whatever the optimal # of context lines per message is, or separating text according to different messages more clearly, or if there&#39;s images or docs then being able to attach those and insert little comments referencing image or docs name so that the new window could read that too etc...</p>
+<p>Anyways, nothing revolutionary, just a more streamlined and optimized way of doing something that can already be done.</p>
+<p>Its just that at least for me that&#39;s what I really care about a conversation with an LLM (that&#39;s the sticky part of it at least), it&#39;s the fact that because we&#39;ve had such a long interaction I can just talk however I talk and it&#39;ll understand - it will get references if I&#39;m using abbreviated words, or it&#39;ll understand my explanations or questions even if I ask them badly or don&#39;t know how to explain myself because it has context about what we&#39;ve done, how I think etc...</p>
+<p>All of that is lost as soon as I open a new chat window with no memory. And that&#39;s especially important for me in projects.</p>
+<p>Also the other thing is, for instance Claude allows you to paste memory from other providers, but all it does is ask (prompt) the other LLM for things like; user preferences, important projects etc... sure, that helps, but there&#39;s something unexplainable about just having the entire conversation word by word. Saying something like &quot;user has a systemic way of breaking down problems by breaking them down&quot; is a very different thing that seeing that pattern repeated over and over and over with its little subtleties. And that&#39;s what I&#39;d like to preserve.</p>
+<p>Anyways, cool thing to try and figure out in the future.</p>
+<p><strong>3:55 PM</strong> - Going to take a quick break.</p>
+<p><strong>5:02 PM</strong> - I&#39;m back. Took the dogs out with my sister. Feeling. a bit tired to be honest but I&#39;ll try to slowly work at the documentation.</p>
+<p><strong>8:17 PM</strong> - Going to take a quick break. I&#39;ve been working on writing the documentation page - sort of like a research paper. I&#39;ve only transcribed one equation and its explanations so far, so I still have a very long way to go. But I do think this is the correct approach before continuing.</p>
+<p><strong>10:26 PM</strong> - What type of man do I want to be?</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
