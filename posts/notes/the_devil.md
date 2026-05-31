@@ -1,6 +1,6 @@
 ---
-title: Simple, not easy
-date: 12/07/2025
+title: Temptations
+date: 5/31/2026
 ---
 
 You’re the devil — but boy, do you pull it off.
