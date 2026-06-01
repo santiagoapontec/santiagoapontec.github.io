@@ -3,4 +3,4 @@ title: Temptations
 date: 5/31/2026
 ---
 
-You’re the devil — but boy, do you pull it off.
+I look at you, and I see the devil — and boy, do you wear it well.
