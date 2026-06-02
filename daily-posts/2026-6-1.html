@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>May 31st</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p>I sometimes say that I&#39;m <em>going through my mid 40&#39;s crisis in my 20&#39;s</em>.</p>
+<p>I say that to justify the fact that maybe all this thinking and all this misery is going to serve me in the long-run because I will have figured most off the things that people never think about and then suddenly get hit by - it&#39;s me thinking that I&#39;m front-loading all the suffering instead of enjoying the bliss that comes with ignorance.</p>
+<p>But sometimes I think it goes too far, sometimes the load from all that thinking is so unbearably heavy that it yanks me to my knees and puts me at a full stop. The funny thing is that I sort of bring it upon myself - sure, there&#39;s some truth behind it, but it&#39;s also me who chooses to give mental space to these things when I&#39;d be better off just working.</p>
+<p>I find that writing helps me tame down the feeling - helps me come back to my feet, so to say. So, even though I&#39;ve tamed the feeling by watching YouTube shorts already, I thought I&#39;d give this a try.</p>
+<p>It usually starts with some thought regarding the future. It&#39;s mostly about money.</p>
+<p>Today that started as me thinking that I realistically only need about two-thousand or so dollars to live the kind of life where money isn&#39;t an opposing force to freedom. It&#39;s the sum that breaks the subordination my time offers in exchange for money. I&#39;m working on a project now, which has some decent chance of maybe making me a couple of bucks, but maybe not in the most sustainable of ways - perhaps I shouldn&#39;t be putting this online, and maybe one day I&#39;ll wipe this clean and replace this line if it all does work out, but trying to beat the casino&#39;s at their own game isn&#39;t the most stress-free life I can imagine.</p>
+<p>Anyways, I think about the fact that the project will work out and so I&#39;ll start making some good monthly income from it and be able to give myself that freedom - but then I start thinking about the fact that the money flow has to theoretically be stable over a very long period of time for me to have a chance for that freedom to materialize itself as something useful - idle time to work on things I think are interesting. And of course the thought comes that beating the casino&#39;s at their own game only probably works for so long before you want to stop doing it or have to stop doing it...</p>
+<p>So then I think about how to maximize the profit from casino&#39;s to buy me at least a free year. But then when I get the free year the clock is ticking and I need to find some other way of making money.</p>
+<p>And so maybe the optimal path is just optimizing to get the things one needs to live a stress-free life. What do we all chase our whole lives? It&#39;s a car and house. We work for our mortgage and car payments. So maybe that&#39;s what I need to optimize for - squeeze enough money to buy me a plot of land in the countryside with a small house and an old truck, then I&#39;ll be set.</p>
+<p>But, gosh, house-prices are crazy - four-hundred thousand dollars for a house with a good plot of land in the country? That&#39;s a hell of a lot of money. But then, it really isn&#39;t, four-hundred-thousand dollars, can I not figure out a way to make that? Surely it&#39;s a skill issue.</p>
+<p>Four-hundred-thousand dollars. I could&#39;ve made than in two years if I had managed to stay in the states and get that job I was too scared to do. So am I wasting my time by working on the project? Per unit of time it may take me the same time as a job...but, well, is the whole point just getting the house, or is it also what you do in order to get the house? Because that sounds precisely like why I told myself I quit, I don&#39;t want to give up two years of my life for a paycheck...</p>
+<p>And well, all that happens, and you know what? Time is ticking on my free year right now...that project which this whole made-up anxiety runs on? It&#39;s yet to be done...</p>
+<p>God is it easy to get carried away.</p>
+<p>I know that isn&#39;t it. That&#39;s not the way to do it.</p>
+<p>But there&#39;s a way where both get taken care of - there&#39;s both a sensible plan that alleviates that and a lot of action.</p>
+<p>Action is probably the key of that mix though.</p>
+<p>If I indeed want to have all those problems I should be building a life which allows me to face them, and that happens in action, not in thought.</p>
+<p>It&#39;s genuinely fucking incredible how many times I&#39;ve gotten to that conclusion. The volume alone should tell me something.</p>
+<p>But what&#39;s wrong if I keep getting to the same conclusion? Is it as easy as you&#39;re not acting? Is it precisely that why the conclusion just always ends up being to act?</p>
+<p>Probably so, but also, probably not.</p>
+<p>But, at this point we&#39;re served better by usefulness than by truth. So yes, yes it is precisely that, I just need to act.</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><a href="2026-6-1-pbp.html" class="post-nav-link">← Play by Play →</a></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
