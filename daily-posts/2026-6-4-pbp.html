@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>6/4 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>9:58 AM</strong> - Just woke up. Couldn&#39;t go to sleep until 2 am even though I went to bed at like 10:30...</p>
+<p>Ended fighting through about 11:30 just trying to keep my eyes closed and at the end I just put on a podcast.</p>
+<p>Just went down to the work-out area and it looks like my mom is doing some cleaning of some sorts because she put everything in the house in there, so working out doesn&#39;t look like much of an option right now...unfortunately.</p>
+<p>I brought up fruit and I&#39;ll just start eating on the desk while I work some. Going to keep re-writing the paper.</p>
+<p>Hopefully we&#39;ll be able to work out before lunch, but I&#39;ll 100% be doing that today.</p>
+<p>Also the little exercises, call it every 2 hours at max, so I&#39;ll need to do some at 12.</p>
+<p><strong>11:49 AM</strong> - Alright, it&#39;s almost two hours since we started working. Some good progress made, I&#39;ve re-written the document to the point in which the new set of information has to be introduced.</p>
+<p>That&#39;s scary of course because now comes the mountain there is to be moved today, which is of course understanding all the new information well enough so that I can write about it.</p>
+<p>Anyways, I&#39;m going to look for a video to do the exercises since I&#39;ve been sat down for two hours and then we&#39;ll back to it.</p>
+<p><strong>12:17 PM</strong> - Stretches done.</p>
+<p>4 stretches, 3 sets of 30 secs each, about 6-8 mins total, not too bad really.</p>
+<p>I don&#39;t know that I feel a huge difference except for the fact that now I feel semi-active, but that&#39;s probably a sign that I may not be too messed up. We&#39;ll keep doing those every 2 hours we work.</p>
+<p>Going to go to the bathroom real quick and I&#39;ll come back to keep working - maybe we&#39;ll try standing for a bit.</p>
+<p><strong>12:33 PM</strong> - Okay, onto another work session. Let&#39;s try standing for a bit.</p>
+<p><strong>1:10 PM</strong> - That&#39;s enough standing, going to go back to sitting haha.</p>
+<p><strong>1:33 PM</strong> - I&#39;ve gotten to a point where I&#39;m having to figure out integrals and I&#39;m really really struggling now.</p>
+<p><strong>1:55 PM</strong> - I&#39;m going to do the stretches, since we are close to the two hour mark and then go work out - at least do something instead of sit down in front of the computer paralyzed because I don&#39;t know how to move forward.</p>
+<p><strong>3:15 PM</strong> - All done with that - took just about an hour to do the workout, definitely manageable.</p>
+<p>Feels good too.</p>
+<p>Going to take a shower and I&#39;ll be back. Should be eating lunch soon too.</p>
+<p>Hopefully the activity is enough so I can go to bed by 10 or so. That&#39;d be ideal to try and start becoming better about waking up earlier.</p>
+<p><strong>5:45 PM</strong> - Alright, let&#39;s figure this integral thing out. All we need to do is split it into manageable chunks.</p>
+<p><strong>6:54 PM</strong> - Well, it&#39;s been about an hour and I&#39;ve made some decent progress, i managed to write down the entire section where we go from one formula to the new equation which has the integral in it.</p>
+<p>There&#39;s two things to do now, one is to create an ancillary explanation section where I talk about why position is the accumulated effect of velocity over time - and how that relates to integrals and why we use them in our equation. And two is to actually solve the integral in the equation.</p>
+<p>The first of those things is generally easy, I just need to get focused and write some explanations which Claude has already given me and flesh them out my own words.</p>
+<p>The second is going to be much more challenging - it requires knowing some differentiation and understanding certain rules, and I have no idea about calculus at all. I might watch some videos to get a rough idea and then attempt it again on paper.</p>
+<p>Anyways, I&#39;m thinking one step too far, I could fairly easily get thing one done and then be able to worry about the next thing, so.</p>
+<p>Let me take a quick bathroom break and when I&#39;m back we&#39;ll do that.</p>
+<p>Just need to focus on the problem right in front of us, not the one after that.</p>
+<p><strong>7:06 PM</strong> - Okay, LET&#39;S GO. GET SOME.</p>
+<p><strong>7:37 PM</strong> - Alright, that&#39;s done.</p>
+<p>We are, in fact, moving to solving the integral. I can sort of understand the maths we&#39;re doing to get from one end to the other, but it&#39;s a shaky understanding.</p>
+<p>I&#39;m going to try and watch some videos that explain basic differentiation and integration, we&#39;ll see of that helps.</p>
+<p>It&#39;ll be a nice change of pace from just writing and talking to Claude.</p>
+<p><strong>7:56 PM</strong> - Found a video from the organic chemistry tutor that says I can understand basic calc in 35 mins - perfect timing, going down for dinner at 8:30.</p>
+<p>I&#39;ll give this a first watch, raw - then we may come back and watch it again while taking notes.</p>
+<p>I also think after dinner I may stop and do some bible reading. I&#39;ve been really slacking on that for a long while now and I know it&#39;s an important part of my bettering in character and my growing towards a better version of myself - towards the man I want to become.</p>
+<p>Onto the video for now.</p>
+<p><strong>8:30 PM</strong> - Okay, kind of getting it a bit more now. That guy is genuinely so clutch.</p>
+<p>Going to do my stretches before I go for dinner - 23 is really hitting ey!</p>
+<p><strong>9:56 PM</strong> - Okay, done with dinner. Stretches done before then too.</p>
+<p>Going to do some bible reading, it&#39;s important I get back to that.</p>
+<p>Will try to go to bed no later than 11, hopefully I fall asleep quick today.</p>
+<p>See you tomorrow. Another chance to make a dent.</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>

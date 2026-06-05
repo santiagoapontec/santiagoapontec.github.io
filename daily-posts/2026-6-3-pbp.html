@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>6/3 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>12:30 PM</strong> - Okay, it&#39;s a new day...woke up very very late, almost at 11.</p>
+<p>I ended up going to sleep at about 2 am - I honestly just stayed in bed watching YouTube shorts - not for any reason other than I didn&#39;t really didn&#39;t want to sleep, the fear came back.</p>
+<p>And it was the same thing in the morning, I just didn&#39;t get out of bed because I was scared of doing so, of facing the day.</p>
+<p><strong>12:46 PM</strong> - Okay, let&#39;s get to working.</p>
+<p>All we have to do is engage with GPT, make sure we understand why our current model is wrong, be able to articulate it and put in a prompt to Claude. That&#39;s the goal for the session - surely we can do that.</p>
+<p>On we go.</p>
+<p><strong>1:28 PM</strong> - Okay, I think I roughly understand how to explain the problem now and what the course of action should be.</p>
+<p>Going to take a quick break, eat something, take a shower, and come back and deal with Claude.</p>
+<p>If anything today will be a success if we manage to have a conversation with Claude and figure out we are really right and then we manage to update the paper with the new information.</p>
+<p><strong>2:22 PM</strong> - Alright, we&#39;ve been avoiding this long enough.</p>
+<p>Time to just jump head on.</p>
+<p>Onto Claude we go.</p>
+<p><strong>3:21 PM</strong> - Stopping to go eat lunch.</p>
+<p><strong>9:26 PM</strong> - My lower back has been giving me issues the past two days - I suspect its both the fact that I&#39;ve been sitting for much of the past 48 hours and also that I have terrible posture.</p>
+<p>I spent a part of the time since I last wrote changing my desk set-up around so that I can take advantage of an elevated cabinet which it has and be able to use it as a sort of standing desk.</p>
+<p>I don&#39;t know that it will fix the problem but I&#39;m sure it&#39;ll be novel nonetheless.</p>
+<p>Something to try is just to switch between positions often, seating at the desk, standing, sitting at a sofa downstairs etc... I&#39;ll try that tomorrow.</p>
+<p>I&#39;ll probably also look for a video with exercises to do every two hours or so for desk workers, that might help + bringing back exercise.</p>
+<p>I also slept a bit, which was a consequence of me just trying to get a straight back on my bed, so what I&#39;m saying next might be made more difficult because of that fact, but we&#39;ll just have to pay that price.</p>
+<p>Tomorrow I want to try and have more structure to what I do when I wake up - I think its a good way to just get the day rolling.</p>
+<p>My idea is to exercise as soon as I wake up - nothing crazy, just 30-40 minutes of dumbbell training downstairs. Both to get some exercise done early in the day but also to prepare my body for a day that is mostly just sitting with my laptop.</p>
+<p>I also want to take a shower before I sit at the desk - I&#39;ve found it helps mentally just feeling like you&#39;ve prepared yourself to begin work.</p>
+<p>And of course, I&#39;ll have breakfast before - though maybe I&#39;ll try and incorporate to work. Just try and eat while I start the work day.</p>
+<p>Anyways, those are the three things I want to try tomorrow. And I guess as long as they are done by 11 am, which is when I&#39;ve usually starting work these past few days, it&#39;s alright. I&#39;ll try to wake up early, but won&#39;t punish myself if I achieve at least that.</p>
+<p>I&#39;m currently sat at my bed re-writing the paper again, just trying to make space for the introduction of the new things I&#39;ll have to add since talking with Claude about the thing we weren&#39;t doing exactly as we should&#39;ve been.</p>
+<p>I might work at it for a tiny bit more, but I&#39;m hoping tiredness catches up to me soon so I won&#39;t be up too late.</p>
+<p>Tomorrow is a new opportunity to move towards our goals - let&#39;s seize it.</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>

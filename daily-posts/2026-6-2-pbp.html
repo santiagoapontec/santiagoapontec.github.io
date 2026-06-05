@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>6/2 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>10:39 AM</strong> - Alright, we&#39;re finally in front of the computer again.</p>
+<p>6 am didn&#39;t quite work out, it was more like 9:30...but we won&#39;t fret about too much, it is better than yesterday&#39;s 11 am.</p>
+<p>I thought today instead of saying what we <em>need to do</em> we&#39;ll just put some minimum constraints on units of time - sort of, deal with boredom or find something to do.</p>
+<p>I thought about the fact that sometimes I used to do work while watching a series, and after 5 or so minutes, the series would get so in the way of work that I&#39;d just turn it off and get to working uninterrupted. We&#39;re not going to copy that exact model, but instead just put draw a few lines that we shouldn&#39;t cross and just see where that takes us - we&#39;re experimenting.</p>
+<p>So, to start us off: for the next hour I cannot watch any video content - that&#39;s YouTube, streaming, etc... there&#39;s no opening any of those platforms.</p>
+<p>Let&#39;s see where that takes us, I know I can keep those promises at least. Not doing something is way easier than doing something, right? Of course, there are infinite options on one side and one option on the other.</p>
+<p><strong>11:53 AM</strong> - Alright well that was an hour.</p>
+<p>Happy to report that I kept my promise - no video content at all. I did end up doing mostly work, there was some idle time here and there, but in the end I completed the whole section explaining the ball model code in the research paper.</p>
+<p>I&#39;m thinking of whether I want to spend time breaking down elemental python explanations - like what a function means, that it asks for inputs and such. It seems like a pain in the ass but it seems like the kind of thing I&#39;d want. And let&#39;s not kid ourselves the only reason I know these things is because Claude has explained them to be, so I can&#39;t pretend now that they are things people should know.</p>
+<p>It&#39;s going to be a pain in the ass but it needs to get done - and the more I avoid it the longer that it&#39;ll be before I can go back to do doing work that excites me more than writing explanations for things.</p>
+<p>Anyways, I&#39;m going to take a break and take a shower. I&#39;ll take all restriction off at this moment of time - if I wish to listen to music, watch videos or whatever else, I may do so.</p>
+<p>We&#39;ll probably do another constrained session as soon as I&#39;m back. I might take the dogs out for a quick walk too, I&#39;m not really sure.</p>
+<p><strong>2:54 PM</strong> - Well I&#39;m back. That was a long time, but I did take a shower, take the dogs out for a walk and also had lunch.</p>
+<p>I&#39;m dreading doing the code explanations but I know they have to be done - I also know I&#39;m capable of doing everything from here until the paper is up-to-date to where the project is, I just know that it&#39;s going to be tedious is all.</p>
+<p>But it needs to get done, and the faster we get it done, the faster we can figure out whether the next phase is feasible.</p>
+<p>So, on we go.</p>
+<p>Going to allow myself to open YouTube exclusively for music for the next hour, but no other video content.</p>
+<p>Going to work at the explanation for the code now.</p>
+<p><strong>4:02 PM</strong> - That&#39;s an hour - went by fast. Ended up writing that code explanation after all, again, not the best, but its on paper and it&#39;s done. It allows us to move on.</p>
+<p>I&#39;m working on copying the wheel model now - I&#39;m basically re-building every program just so I know that I understand it. Just finished that so now it&#39;s just about writing that section in the paper - it should be fairly quick, its copy and paste from the ball one.</p>
+<p>After that things may get a bit more interesting, we&#39;ll move on to trying to explain the simulation program which is a bit more meaty - so I&#39;m excited to see if I can solidify my understanding of it.</p>
+<p>Going to take a quick break, I&#39;ll be back.</p>
+<p><strong>4:41 PM</strong> - I really do not feel like it, but I know I need to keep writing this paper.</p>
+<p>Let&#39;s just push through and write the wheel model program explanation and see how feel at that point.</p>
+<p><strong>5:28 PM</strong> - Finished the wheel program explanation.</p>
+<p>Not my best work, but it&#39;s done, and it can always be revised and edited later.</p>
+<p>All I&#39;m missing is an explanation of how the modulo operator works in python and why we use it. But I need to help my sister run an errand so I&#39;ll need to do that as soon as I&#39;m back.</p>
+<p>I&#39;ll write it here when I am.</p>
+<p><strong>8:03 PM</strong> - Just got back.</p>
+<p>I&#39;m not feeling great, I think have a stomach bug. But a friend of mine sent something talking about a former place I interned at and quit before I could face the reality of whether I was good or not - and, I don&#39;t know. I don&#39;t want that place to be the defining feature of me, the fact that I once got there.</p>
+<p>And even though I wish I could&#39;ve done things differently I have to prove myself right now. I got the place even though I felt I shouldn&#39;t have, well, I can do the same with whatever is in front of me know, make despite whatever fact.</p>
+<p>Let&#39;s build the muscle. Let&#39;s make sure that next time an opportunity like that comes we don&#39;t feel unprepared.</p>
+<p><strong>8:24 PM</strong> - Alright, for the however-many-time today, although it&#39;s not my best work, it&#39;s done.</p>
+<p>At this point, we don&#39;t need things to be perfect, just good enough so that our understanding is enough to experiment properly.</p>
+<p>Now we get to the part I thought might be interesting but which I now think will also be a bit tedious.</p>
+<p>But hey, we move.</p>
+<p>Onto the simulator.</p>
+<p>We&#39;ll first re-build it, which isn&#39;t as bad. It&#39;ll be a good indicator of our understanding.</p>
+<p><strong>10:27 PM</strong> - Well, it seems the writing and re-building of things did serve me right. There was in fact a pretty big mistake in our simulator model.</p>
+<p>I&#39;d debated it with Claude before and though it never completely convinced me, it made enough sense for me to just agree and go with it.</p>
+<p>But every time I thought about it again something didn&#39;t really sit right with me, so I finally decided to try and explain it to GPT - and after 20 minutes of also arguing with GPT trying to answer my question instead of giving me scenarios under which claude may be correct I figured than I&#39;m correct. I&#39;m at least 95% that I am.</p>
+<p>The issue now becomes fixing the entire program based on that. I&#39;ll need to try and explain things to Claude and have it think for itself instead of just agree with me - since at the end we do want the truest answer here - and then have it help re-build our program around that.</p>
+<p>That genuinely seems like a pain in the ass.</p>
+<p>My back is hurting too from sitting at this chair all day - gosh do I need to get back to exercising.</p>
+<p>I may just call it a night in terms of work now.</p>
+<p>I cancelled my plans tomorrow because I think I have a stomach bug, so that&#39;s I guess good news for the work since we&#39;ll be able to dedicate some time to it tomorrow instead of leaving the house.</p>
+<p>Good work today - we pushed through not wanting to do work and we engaged with the material at a level which made us realized we had a made a mistake.</p>
+<p>Think I said that once - be stubborn enough to run (through) some walls and wise enough to change course every once in a while. Guess that&#39;s what we did today.</p>
+<p>Goodnight fellas</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
