@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>6/5 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>6:44 AM</strong> - Just got out of bed. Pretty good considering the times we&#39;ve woken up the past few days!</p>
+<p>Didn&#39;t have too much trouble going to sleep I don&#39;t think. Though I did shoot myself in the foot because I put in an alarm f0r 5:30 so I could wake up and know that I still had two more hours to sleep, but I was never really able to go back to sleep after that.</p>
+<p>My Garmin says I slept about five and a half hours, which isn&#39;t too bad, but we definitely want to stretch that by an hour, hour and half if we can.</p>
+<p>Name of the game today is not doing any napping past like 4 pm...and if we do any napping at all not over 1hr.</p>
+<p>That way we can hopefully keep the sleep/wake-up time fairly consistent hereon.</p>
+<p>Anyways, going to go down and have breakfast.</p>
+<p>I&#39;ll be back!</p>
+<p><strong>7:43 AM</strong> - Alright, we&#39;re back. Sat at the desk now.</p>
+<p>Let&#39;s make today a good day.</p>
+<p>As a side note, while on breakfast I was thinking that maybe something I want to do is go back to school, do a double degree, something like math and some engineering. I don&#39;t know, it&#39;s just a thought that came up. Maybe move to a different city.</p>
+<p>In fact, the Uni I had in mind turned out to be public, which is pretty good, I wouldn&#39;t need to spend a bunch of money to do it. Just pass the entrance exam really.</p>
+<p>Anyways, that&#39;s a future thought, we need to work on what&#39;s in front of us and maybe that possibility opens. It&#39;d be a dream if we could do that and not have to worry about money - what we&#39;re doing is a step towards that.</p>
+<p>So, I&#39;ll keep the thought on the back burner, but let&#39;s focus on what we have in front of us now.</p>
+<p>First things first I&#39;m going to finish the calculus video I was watching yesterday, I have maybe 10 mins left of it. Then we&#39;ll jump straight in to seeing whether we can decode the integral we have to solve any better - main goal over the next few hours is having it written fully in the paper.</p>
+<p>On we go!</p>
+<p><strong>10:12 AM</strong> - That was really a struggle, but we pushed through - which I&#39;m proud of.</p>
+<p>Through the first hour I honestly thought I wasn&#39;t going to get it. I watched videos, talked with GPT, with Dia, Claude etc... and I could just not understand what we were doing. But I kept asking questions, figuring out small parts individually and such. And then, after some frustration, I just looked back at the first thing claude had sent - a step by step explanation of the derivation, and it just kind of made sense.</p>
+<p>I&#39;m not claiming I know how to derive and integrate now, but whatever equations I have on my paper kind of make sense now. And that&#39;s further than we were two hours ago. They&#39;re on paper.</p>
+<p>Going to take a quick break now - it&#39;s stretch time and I&#39;m also a bit hungry.</p>
+<p>After that we have to finish integrating, because I guess finding the derivative was just a part of that process.</p>
+<p>Anyways, we&#39;ll tackle it. We can.</p>
+<p>I&#39;ll be back.</p>
+<p><strong>10:48 AM</strong> - Alright, stretches all done, got some snacks.</p>
+<p>We should be all good for another session, let&#39;s make a dent.</p>
+<p><strong>12:37 PM</strong> - Alright, that&#39;s the integration fully completed. It seems that with that we - apparently - have a full ball equation to model angular position, which is the exact thing we were missing if your recall our discussion about 3 days ago.</p>
+<p>It seems like the next step is updating the code to reflect that fact - that&#39;s both exciting since I&#39;ll move back to &quot;building&quot; again, but also scary because I&#39;m sure that it&#39;ll come with much more confusion and broken code we&#39;ll need to fix.</p>
+<p>Anyways, going to take a break here. We&#39;re almost at two hours so it seems suitable.</p>
+<p>Going to do my stretches and also go work out - I need to do that since I&#39;m planning on watching the NBA finals later tonight so I want to have my things finished before then.</p>
+<p>Lunch will probably be right after the work-out, I&#39;m not really sure.</p>
+<p>Either way, proud of what we achieved this morning - the early start paid off. We just need to have that same approach to what comes next.</p>
+<p>Claude pro subscription is up in about 20 days, so we need to keep putting in good day&#39;s because our bank account suggest next month&#39;s sub might be tight to get if we don&#39;t start having inflows.</p>
+<p>We&#39;ll deal with each day as best we can and let day 20 be the accumulated consecuence of that.</p>
+<p><strong>2:07 PM</strong> - Stretches done, work-out too!</p>
+<p>Took me just about an hour, just like yesterday - it&#39;s good, probably sustainable.</p>
+<p>Going to have lunch now and take a shower right after. We&#39;ll get after it when I come back to the desk.</p>
+<p><strong>4:02 PM</strong> - Alright, back at the desk. Showered and fed.</p>
+<p>Honestly my mind drifted so much in the shower - thoughts of this working, thoughts of being at Uni next year studying math and engineering, thinking about money needed for that, where I&#39;d live, etc...</p>
+<p>All things that don&#39;t matter now. We haven&#39;t earned worrying about them.</p>
+<p>Let&#39;s get to it. Let&#39;s tackle what&#39;s in front of us.</p>
+<p><strong>7:07 PM</strong> - Alright, that&#39;s another session done.</p>
+<p>Good progress, been doing fairly well partnering with Claude on the editing of the code. We&#39;re basically back at the point where we had to leave to make the changes we&#39;ve been implementing for the past 3 days.</p>
+<p>Had a tiny confusion on one of the things we were doing and so I figured we had something wrong again - turns out I was just not understanding, but it&#39;s good I spent 20 mins arguing with Claude and clarifying with GPT, is some way it means I understand the material enough to know what to be confused about, if that makes any sense.</p>
+<p>Anyways, Claude says I&#39;ve reached my session limit. It&#39;s perfect timing, lasted the whole day!</p>
+<p>It also coincided with the message that gave me the last updates I need to make, so no broken threads.</p>
+<p>Going to take a break here, NBA finals game 2 happens in 30 and I want to watch it - we did good work, so its justifiable we do.</p>
+<p>Going to do my stretches too, went past the mark this last session.</p>
+<p>All we need to do to wrap up the night is really do our bible reading time and have dinner. Good day today.</p>
+<p>We try and go to bed early to attack the full day tomorrow too, doesn&#39;t matter that it&#39;s Saturday, after all in my state weekdays and weekends are interchangeable - which would be cool to have long-term, in a sustainable manner of course...</p>
+<p>I&#39;ll keep writing entries, just wanted to make this big one as a last big explanatory of the remainder of the day.</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
