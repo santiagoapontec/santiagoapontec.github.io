@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+    ]})">
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f0e8;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: #1a1a1a;
+            padding: 60px 40px;
+        }
+
+        header {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #999;
+            font-style: italic;
+            margin-top: 4px;
+        }
+
+        article {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .post-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .post-header h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .post-subtitle {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .post-subtitle:empty {
+            display: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .post-body {
+            margin-top: 28px;
+        }
+
+        .post-body p {
+            font-size: 14px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 16px;
+        }
+
+        pre {
+            background-color: #ede8df;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            color: #1a1a1a;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin: 24px 0;
+        }
+
+        .image-row figure {
+            flex: 1;
+            max-width: 480px;
+        }
+
+        .image-row figure:only-child {
+            max-width: 600px;
+            flex: none;
+        }
+
+        .image-row img {
+            width: 100%;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .post-body img {
+            display: block;
+            margin: 24px auto;
+            max-width: 50%;
+            border-radius: 6px;
+        }
+
+        .post-nav {
+            display: flex;
+            justify-content: space-between;
+            max-width: 760px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+        }
+
+        .post-nav-link {
+            font-size: 13px;
+            color: #888;
+            text-decoration: none;
+        }
+
+        .post-nav-link:hover {
+            color: #1a1a1a;
+        }
+
+        blockquote {
+            border-left: 3px solid #bbb;
+            padding: 8px 0 8px 20px;
+            margin: 24px 0;
+            color: #555;
+            font-style: italic;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        ul li {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 4px;
+        }
+
+        ol {
+            list-style: none;
+            counter-reset: item;
+            padding-left: 40px;
+            margin: 16px 0;
+        }
+
+        ol li {
+            counter-increment: item;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        ol li::before {
+            content: counter(item) ")";
+            position: absolute;
+            left: -32px;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: #1a1a1a;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="../daily.html" style="color: inherit; text-decoration: none;">Daily</a></h1>
+        <p>An actual record so that I can't lie on podcasts down the road...</p>
+    </header>
+
+    <article>
+        <div class="post-header">
+            <h2>6/6 — Play by Play</h2>
+            <p class="post-subtitle"></p>
+            <hr>
+        </div>
+
+        <div class="post-body">
+            <p><strong>10:00 AM</strong> - Just got out of bed. Nothing new, but hey, we make the best of what we have.</p>
+<p>Today is my first day back running - had a bit of an injury which I hope its gone. Let&#39;s be happy about that - good energy going into that first run, we want it to go well.</p>
+<p>Going to go down and have breakfast and we&#39;ll make a good day out of this.</p>
+<p>Waking up late doesn&#39;t mean we throw teh day away not working or watching YouTube etc...</p>
+<p>On we go brothers.</p>
+<p><strong>12:17 PM</strong> - Okay, I&#39;m definitely off track.</p>
+<p>Let&#39;s get an hour minimum session before we go out for the run. It&#39;s nothing, it&#39;s just 4k.</p>
+<p>Come on, let&#39;s get back to our feet.</p>
+<p>One hour work session, it&#39;s not Saturday, it&#39;s just another day, same as yesterday same as tomorrow.</p>
+<p>Come on.</p>
+<p><strong>1:21 PM</strong> - Alright, an hour done.</p>
+<p>We finished the things left over from yesterday and also built a validation program to make sure every function in our simulator is running correctly.</p>
+<p>Not feeling sharp really, so I&#39;m going to get ready, go for that quick run, come back, have lunch, shower, and I&#39;ll come back to do some more work.</p>
+<p>It&#39;ll mostly be boring-ish work again - going to start a jupyter notebook to write notes about our code, and since we have a bunch of programs, well, it&#39;ll take a while.</p>
+<p>We&#39;re getting eerily close to testing with video, which will be a new exciting phase - but I need to make sure I understand everything we have now before we move on to that.</p>
+<p>Anyways, I&#39;m excited for the run. We&#39;ll see how my right foot feels and how my body deals with coming back after an almost 2 and half week hiatus.</p>
+<p>I&#39;ll be back.</p>
+<p><strong>6:39 PM</strong> - Been taking it easy since I got back from the run - I just feel physically beat, but it&#39;s alright.</p>
+<p>It&#39;s probably both the fact that I&#39;m more than likely experiencing the terrible soreness that comes with working out for the first time in a long time and also the running for the first time.</p>
+<p>I felt very stiff when running but my legs and feet feel fine now, it mostly my chest and shoulders, the right side hurts a little more, I&#39;m hoping they will be alright by monday...</p>
+<p>Taking it easy though.</p>
+<p>That doesn&#39;t mean doing whatever I want - it&#39;s not giving in into temptation or desires, but it is allowing myself to kind of just switch off and lay in bed watching television.</p>
+<p>Tomorrow is church, so that will be good, probably another easy day, but at last we have to be recharged by monday, no excuses there.</p>
+
+        </div>
+    </article>
+
+    <div class="post-nav"><span style="font-size:13px; color:#bbb; font-style:italic;">No reflection written for this day</span></div>
+    <footer>
+        <a href="../index.html">Home</a>
+    </footer>
+
+  </body>
+</html>
